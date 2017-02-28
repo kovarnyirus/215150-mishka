@@ -1,7 +1,7 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Евстафьев](https://up.htmlacademy.ru/adaptive/10/user/215150).
-* Наставник: `Неизвестно`.
+* Наставник: `Владислав Балабанович`.
 
 ---
 
