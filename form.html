@@ -10,6 +10,7 @@
         <div class="logo">
           <a href="#"><img src="http://placehold.it/150x100" alt="Логотип" /> </a>
         </div>
+        <button class="main-nav-toggle" type="botton">Открыть меню</button>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href ="#">Каталог товаров</a> </li>
@@ -31,7 +32,6 @@
         <div class="filter-type">
           <div class="filter-type__header">
             <span class="filter-type__title">Тип</span>
-            <span class="horizontal-line"></span>
           </div>
           <div class="filter-type__item">
             <input type="radio" checked name="accessories-interior" value="check-accessories">
@@ -45,7 +45,6 @@
         <div class="filter-color">
           <div class="filter-type__header">
             <span class="filter-color__title">Цвет</span>
-            <span class="horizontal-line"></span>
           </div>
           <div class="filter-color__item">
             <input type="checkbox" name="white" value="white" checked>
@@ -75,42 +74,38 @@
         <div class="user-info">
           <div class="user-info__header">
             <span class="user-info__title">фио</span>
-            <span class="horizontal-line"></span>
           </div>
           <div class="user-name">
             <lable class="user-info__input-title" for="name">Имя</lable>
-            <input class="user-info__input-text" type="text" id="name" placeholder="Введите ваше имя*" />
+            <input class="user-info__input-text" type="text"  name="user-name" id="name" placeholder="Введите ваше имя*" />
           </div>
           <div class="user-surname">
             <lable class="user-info__input-title" for="surname">Фамилия</lable>
-            <input class="user-info__input-text" type="text" id="surname" placeholder="Укажите фамилию*"  />
+            <input class="user-info__input-text" type="text"  name="user-surname" id="surname" placeholder="Укажите фамилию*"  />
           </div>
           <div class="user-patronymic">
             <lable class="user-info__input-title" for="patronymic">Отчество</lable>
-            <input class="user-info__input-text" type="text" id="patronymic" placeholder="Отчество, если желаете"  />
+            <input class="user-info__input-text" type="text"  name="user-patronymic" id="patronymic" placeholder="Отчество, если желаете"  />
           </div>
           <div class="user-phone">
             <div class="user-phone__header">
               <span class="user-info__title">тел</span>
-              <span class="horizontal-line"></span>
             </div>
             <div class="user-phone__icon-phone">
-              <input class="user-phone__input-phone" type="tel" id="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ*" />
+              <input class="user-phone__input-phone" type="tel" name="user-phone" id="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ*" />
             </div>
           </div>
           <div class="user-email">
             <div class="user-email__header">
               <span class="user-info__title">e-mail</span>
-              <span class="horizontal-line"></span>
             </div>
             <div class="user-email__icon-email">
-              <input class="user-email__input-email" type="email" id="email" placeholder="Ваш Email*" required="2222" />
+              <input class="user-email__input-email" type="email" name="user-email" id="email" placeholder="Ваш Email*" required="2222" />
             </div>
           </div>
           <div class="additionally">
             <div class="additionally__header">
               <span class="user-info__title">доп</span>
-              <span class="horizontal-line"></span>
             </div>
             <div class="additionally__textarea">
               <textarea placeholder="Опишите все ваши пожелания к заказу"></textarea>

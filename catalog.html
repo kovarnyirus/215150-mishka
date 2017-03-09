@@ -10,6 +10,7 @@
         <div class="logo">
           <a href="#"><img src="http://placehold.it/150x100" alt="Логотип" /> </a>
         </div>
+        <button class="main-nav-toggle" type="botton">Открыть меню</button>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href ="#">Каталог товаров</a> </li>
@@ -23,47 +24,61 @@
         <h1>Каталог товаров</h1>
       </div>
     </header>
-    <div class="catalog">
-      <div class="catalog__item">
-        <img src="http://placehold.it/150x100" alt="фото товара" />
-        <h3>Зайчик-попрыгайчик</h3>
-        <p>Рост 30 см, вес 200 г</p>
-        <div class="catalog-item-footer">
-          <span class="catalog-item-footer__cost">1200 руб.</span>
-          <span class="catalog-item-footer__basket"><a href="#"></a></span>
+    <div class="main">
+      <div class="catalog">
+        <div class="catalog__item">
+          <div class="catalog-item-image">
+            <img src="http://placehold.it/150x100" alt="фото товара" />
+          </div>
+          <section class="item-content">
+            <h3>Зайчик-попрыгайчик</h3>
+            <p>Рост 30 см, вес 200 г</p>
+            <div class="catalog-item-footer">
+              <span class="catalog-item-footer__cost">1200 руб.</span>
+              <a class="catalog-item-footer__basket" href="#"></a>
+            </div>
+          </section>
+        </div>
+        <div class="catalog__item">
+          <div class="catalog-item-image">
+            <img src="http://placehold.it/150x100" alt="фото товара" />
+          </div>
+          <section class="item-content">
+            <h3>Корзинка для белья</h3>
+            <p>Диаметр 15 см, высота 10 см</p>
+            <div class="catalog-item-footer">
+              <span class="catalog-item-footer__cost">690 руб.</span>
+              <a class="catalog-item-footer__basket" href="#"></a>
+            </div>
+        </section>
+        </div>
+        <div class="catalog__item">
+          <div class="catalog-item-image">
+            <img src="http://placehold.it/150x100" alt="фото товара" />
+          </div>
+          <section class="item-content">
+            <h3>Большая корзинка для игрушек</h3>
+            <p>Диаметр 30 см, высота 30 см/p>
+            <div class="catalog-item-footer">
+              <span class="catalog-item-footer__cost">1 500 руб.</span>
+              <a class="catalog-item-footer__basket" href="#"></a>
+            </div>
+          </section
         </div>
       </div>
-      <div class="catalog__item">
-        <img src="http://placehold.it/150x100" alt="фото товара" />
-        <h3>Корзинка для белья</h3>
-        <p>Диаметр 15 см, высота 10 см</p>
-        <div class="catalog-item-footer">
-          <span class="catalog-item-footer__cost">690 руб.</span>
-          <span class="catalog-item-footer__basket"><a href="#"></a></span>
+      <div class="video">
+        <div class="video-header">
+          <span class="video-header__camera"></span>
+          <h3>Процесс производства</h3>
         </div>
+        <video class="video-player" width="100" height="100" >
+           <source src="#">
+        </video>
+        <p class="video__comment">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="video__make-order" href="#">Сделать заказ</a>
       </div>
-      <div class="catalog__item">
-        <img src="http://placehold.it/150x100" alt="фото товара" />
-        <h3>Большая корзинка для игрушек</h3>
-        <p>Диаметр 30 см, высота 30 см/p>
-        <div class="catalog-item-footer">
-          <span class="catalog-item-footer__cost">1 500 руб.</span>
-          <span class="catalog-item-footer__basket"><a href="#"></a></span>
-        </div>
-      </div>
-    </div>
-    <div class="video">
-      <div class="video-header">
-        <span class="video-header__camera"></span>
-        <h3>Процесс производства</h3>
-      </div>
-      <video width="100" height="100" >
-         <source src="#">
-      </video>
-      <p class="video__comment">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-      </p>
-      <a class="video__make-order" href="#">Сделать заказ</a>
     </div>
     <footer class="page-footer">
       <div class="page-footer__social">
