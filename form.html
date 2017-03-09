@@ -1,135 +1,138 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка заказ</title>
-  </head>
-  <body>
-    <header class="page-header" >
-      <div class="page-header__inner">
-        <div class="logo">
-          <a href="#"><img src="http://placehold.it/150x100" alt="Логотип" /> </a>
-        </div>
-        <button class="main-nav-toggle" type="botton">Открыть меню</button>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href ="#">Каталог товаров</a> </li>
-            <li class="main-nav__item"><a href ="#">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a href ="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href ="#">Корзина: пока пуста</a></li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка заказ</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__inner">
+      <div class="logo">
+        <a href="#"><img src="http://placehold.it/150x100" alt="Логотип" /> </a>
       </div>
-      <div class="page-header__title">
-        <h1>Вязание на заказ</h1>
-      </div>
-    </header>
-    <div class="order-form">
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <p class="order-form__description">
-          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-        </p>
-        <div class="filter-type">
-          <div class="filter-type__header">
-            <span class="filter-type__title">Тип</span>
-          </div>
-          <div class="filter-type__item">
-            <input type="radio" checked name="accessories-interior" value="check-accessories">
-            <span class="filter-type__text">Аксессуар для интерьера</span>
-          </div>
-          <div class="filter-type__item">
-            <input type="radio" name="children-toy" value="check-children-toy">
-            <span class="filter-type__text">Детская игрушка</span>
-          </div>
-        </div>
-        <div class="filter-color">
-          <div class="filter-type__header">
-            <span class="filter-color__title">Цвет</span>
-          </div>
-          <div class="filter-color__item">
-            <input type="checkbox" name="white" value="white" checked>
-            <span class="filter-color_text">Белый</span>
-          </div>
-          <div class="filter-color__item">
-            <input type="checkbox" name="grey" value="grey" checked>
-            <span class="filter-color_text">Серый</span>
-          </div>
-          <div class="filter-color__item">
-            <input type="checkbox" name="tiffani" value="tiffani">
-            <span class="filter-color_text">"Тиффани"</span>
-          </div>
-          <div class="filter-color__item">
-            <input type="checkbox" name="black" value="black">
-            <span class="filter-color_text">Черный</span>
-          </div>
-          <div class="filter-color__item">
-            <input type="checkbox" name="pink" value="pink">
-            <span class="filter-color_text">Розовый</span>
-          </div>
-          <div class="filter-color__item">
-            <input type="checkbox" name="orange" value="orange">
-            <span class="filter-color_text">Оранжевый</span>
-          </div>
-        </div>
-        <div class="user-info">
-          <div class="user-info__header">
-            <span class="user-info__title">фио</span>
-          </div>
-          <div class="user-name">
-            <lable class="user-info__input-title" for="name">Имя</lable>
-            <input class="user-info__input-text" type="text"  name="user-name" id="name" placeholder="Введите ваше имя*" />
-          </div>
-          <div class="user-surname">
-            <lable class="user-info__input-title" for="surname">Фамилия</lable>
-            <input class="user-info__input-text" type="text"  name="user-surname" id="surname" placeholder="Укажите фамилию*"  />
-          </div>
-          <div class="user-patronymic">
-            <lable class="user-info__input-title" for="patronymic">Отчество</lable>
-            <input class="user-info__input-text" type="text"  name="user-patronymic" id="patronymic" placeholder="Отчество, если желаете"  />
-          </div>
-          <div class="user-phone">
-            <div class="user-phone__header">
-              <span class="user-info__title">тел</span>
-            </div>
-            <div class="user-phone__icon-phone">
-              <input class="user-phone__input-phone" type="tel" name="user-phone" id="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ*" />
-            </div>
-          </div>
-          <div class="user-email">
-            <div class="user-email__header">
-              <span class="user-info__title">e-mail</span>
-            </div>
-            <div class="user-email__icon-email">
-              <input class="user-email__input-email" type="email" name="user-email" id="email" placeholder="Ваш Email*" required="2222" />
-            </div>
-          </div>
-          <div class="additionally">
-            <div class="additionally__header">
-              <span class="user-info__title">доп</span>
-            </div>
-            <div class="additionally__textarea">
-              <textarea placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </div>
-          </div>
-          <p class="order-form__must-field">
-            *Поля обязательны для заполнения
-          </p>
-          <button class="button-order-form" type="submit">Отправить заказ</button>
-        </form>
-      </div>
+      <button class="main-nav-toggle" type="botton">Открыть меню</button>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Каталог товаров</a> </li>
+          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
     </div>
-    <footer class="page-footer">
-      <div class="page-footer__social">
-        <span class="social-links">
+    <div class="page-header__title">
+      <h1>Вязание на заказ</h1>
+    </div>
+  </header>
+  <div class="order-form">
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <p class="order-form__description">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <div class="filter-type">
+        <div class="filter-type__header">
+          <span class="filter-type__title">Тип</span>
+        </div>
+        <div class="filter-type__item">
+          <input type="radio" checked name="accessories-interior" value="check-accessories">
+          <span class="filter-type__text">Аксессуар для интерьера</span>
+        </div>
+        <div class="filter-type__item">
+          <input type="radio" name="children-toy" value="check-children-toy">
+          <span class="filter-type__text">Детская игрушка</span>
+        </div>
+      </div>
+      <div class="filter-color">
+        <div class="filter-type__header">
+          <span class="filter-color__title">Цвет</span>
+        </div>
+        <div class="filter-color__item">
+          <input type="checkbox" name="white" value="white" checked>
+          <span class="filter-color_text">Белый</span>
+        </div>
+        <div class="filter-color__item">
+          <input type="checkbox" name="grey" value="grey" checked>
+          <span class="filter-color_text">Серый</span>
+        </div>
+        <div class="filter-color__item">
+          <input type="checkbox" name="tiffani" value="tiffani">
+          <span class="filter-color_text">"Тиффани"</span>
+        </div>
+        <div class="filter-color__item">
+          <input type="checkbox" name="black" value="black">
+          <span class="filter-color_text">Черный</span>
+        </div>
+        <div class="filter-color__item">
+          <input type="checkbox" name="pink" value="pink">
+          <span class="filter-color_text">Розовый</span>
+        </div>
+        <div class="filter-color__item">
+          <input type="checkbox" name="orange" value="orange">
+          <span class="filter-color_text">Оранжевый</span>
+        </div>
+      </div>
+      <div class="user-info">
+        <div class="user-info__header">
+          <span class="user-info__title">фио</span>
+        </div>
+        <div class="user-name">
+          <lable class="user-info__input-title" for="name">Имя</lable>
+          <input class="user-info__input-text" type="text" name="user-name" id="name" placeholder="Введите ваше имя*" />
+        </div>
+        <div class="user-surname">
+          <lable class="user-info__input-title" for="surname">Фамилия</lable>
+          <input class="user-info__input-text" type="text" name="user-surname" id="surname" placeholder="Укажите фамилию*" />
+        </div>
+        <div class="user-patronymic">
+          <lable class="user-info__input-title" for="patronymic">Отчество</lable>
+          <input class="user-info__input-text" type="text" name="user-patronymic" id="patronymic" placeholder="Отчество, если желаете" />
+        </div>
+        <div class="user-phone">
+          <div class="user-phone__header">
+            <span class="user-info__title">тел</span>
+          </div>
+          <div class="user-phone__icon-phone">
+            <input class="user-phone__input-phone" type="tel" name="user-phone" id="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ*" />
+          </div>
+        </div>
+        <div class="user-email">
+          <div class="user-email__header">
+            <span class="user-info__title">e-mail</span>
+          </div>
+          <div class="user-email__icon-email">
+            <input class="user-email__input-email" type="email" name="user-email" id="email" placeholder="Ваш Email*" required="2222" />
+          </div>
+        </div>
+        <div class="additionally">
+          <div class="additionally__header">
+            <span class="user-info__title">доп</span>
+          </div>
+          <div class="additionally__textarea">
+            <textarea placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+        </div>
+        <p class="order-form__must-field">
+          *Поля обязательны для заполнения
+        </p>
+        <button class="button-order-form" type="submit">Отправить заказ</button>
+    </form>
+    </div>
+  </div>
+  <footer class="page-footer">
+    <div class="page-footer__social">
+      <span class="social-links">
           <a class="social-links__instagram" href=""></a>
           <a class="social-links__fb" href=""></a>
           <a class="social-links__twiter" href=""></a>
         </span>
-      </div>
-      <div class="page-footer__copyright" >
-        Разработано:
-        <a class=" btn page-footer__copyright-link" href=" https: //htmlacademy. ru/intensive/adaptive" >HTML Academy</a>
-      </div>
-    </footer>
-  </body>
+    </div>
+    <div class="page-footer__copyright">
+      Разработано:
+      <a class=" btn page-footer__copyright-link" href=" https: //htmlacademy. ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+
 </html>
