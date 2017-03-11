@@ -1,10 +1,23 @@
 .page-footer{
+  margin-top: 30px;
   background-color:@bg-footer;
 }
+
+.page-footer__social{
+  padding-bottom: 28px;
+  padding-top: 24px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-bottom: 1px solid @mint-color;
+}
+.social-links a {
+  margin-right: 20px;
+}
 .social-links__instagram {
+  margin-left: 78px;
   width: 25px;
   height: 25px;
-  background-image: url(../../img/icon-insta.svg);
+  background: url(../../img/icon-insta.svg) no-repeat;
   display: inline-block;
 }
 
@@ -19,4 +32,18 @@
   height: 20px;
   background-image: url(../../img/icon-twitter.svg);
   display: inline-block;
+}
+.page-footer__copyright{
+  padding: 30px 30px;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  & a {
+    width:28px;
+    height: 34px;
+    background-image: url(../../img/logo-htmlacademy.svg);
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: -10px;
+  }
 }

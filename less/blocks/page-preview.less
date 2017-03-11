@@ -20,7 +20,25 @@
     padding: 0;
   }
 }
+.page-preview__item--ico::before{
+  content: "";
+  right: 50px;
+  bottom: 10px;
+  width:50px;
+  height: 65px;
+  background: url("../../img/icon-interior.svg") no-repeat;
+  position: absolute;
+}
 
 .page-preview__item--color {
   background-color: #56c3b2;
+}
+.page-preview__item--color::before {
+  content: "";
+  right: 50px;
+  bottom: -90px;
+  width:65px;
+  height: 65px;
+  background: url("../../img/icon-toy.svg") no-repeat;
+  position: absolute;
 }
