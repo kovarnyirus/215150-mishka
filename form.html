@@ -11,13 +11,13 @@
   <header class="page-header">
     <div class="page-header__inner">
       <div class="logo">
-        <a href="#"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
+        <a href="index.html"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
       </div>
       <button class="main-nav-toggle" type="botton">Открыть меню</button>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a>Вязание на заказ</a></li>
           <li class="main-nav__item main-nav__item--ico-serch"><a href="#">Поиск по сайту</a></li>
           <li class="main-nav__item main-nav__item--icon-cart"><a href="#">Корзина: пока пуста</a></li>
         </ul>
@@ -37,12 +37,12 @@
           <span class="filter-type__title">Тип</span>
         </div>
         <div class="filter-type__item">
-          <input type="radio" checked name="accessories-interior" value="check-accessories">
-          <span class="filter-type__text">Аксессуар для интерьера</span>
+          <input type="radio" id="accessories-interior" checked name="accessories-interior" value="check-accessories">
+          <label for="accessories-interior"><span class="filter-type__text">Аксессуар для интерьера</span></lable>
         </div>
         <div class="filter-type__item">
-          <input type="radio" name="children-toy" value="check-children-toy">
-          <span class="filter-type__text">Детская игрушка</span>
+          <input type="radio" id="children-toy" name="children-toy" value="check-children-toy">
+          <label for="children-toy"><span class="filter-type__text">Детская игрушка</span></lable>
         </div>
       </div>
       <div class="filter-color">
@@ -50,28 +50,28 @@
           <span class="filter-color__title">Цвет</span>
         </div>
         <div class="filter-color__item">
-          <input type="checkbox" name="white" value="white" checked>
-          <span class="filter-color_text">Белый</span>
+          <input type="checkbox" id="color-white" name="color-white" value="white" checked>
+          <label for="color-white"><span class="filter-color_text">Белый</span></lable>
         </div>
         <div class="filter-color__item">
-          <input type="checkbox" name="grey" value="grey" checked>
-          <span class="filter-color_text">Серый</span>
+          <input type="checkbox" id="color-grey" name="color-grey" value="grey" checked>
+          <label for="color-grey"><span class="filter-color_text">Серый</span></lable>
         </div>
         <div class="filter-color__item">
-          <input type="checkbox" name="tiffani" value="tiffani">
-          <span class="filter-color_text">"Тиффани"</span>
+          <input type="checkbox" id="color-tiffani" name="color-tiffani" value="tiffani">
+          <label for="color-tiffani"><span class="filter-color_text">"Тиффани"</span></lable>
         </div>
         <div class="filter-color__item">
-          <input type="checkbox" name="black" value="black">
-          <span class="filter-color_text">Черный</span>
+          <input type="checkbox" id="color-black" name="black" value="black">
+          <label for="color-black"><span class="filter-color_text">Черный</span></lable>
         </div>
         <div class="filter-color__item">
-          <input type="checkbox" name="pink" value="pink">
-          <span class="filter-color_text">Розовый</span>
+          <input type="checkbox" id="color-pink" name="pink" value="pink">
+          <label for="color-pink"><span class="filter-color_text">Розовый</span></lable>
         </div>
         <div class="filter-color__item">
-          <input type="checkbox" name="orange" value="orange">
-          <span class="filter-color_text">Оранжевый</span>
+          <input type="checkbox" id="color-orange" name="orange" value="orange">
+          <label for="color-orange"><span class="filter-color_text">Оранжевый</span></lable>
         </div>
       </div>
       <div class="user-info">
