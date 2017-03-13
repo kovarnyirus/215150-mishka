@@ -1,26 +1,77 @@
-.user-info__header{
+.user-info__header {
   padding: 25px 0;
   position: relative;
+}
+
+.user-info__title {
+  color: @mint-color;
   text-transform: uppercase;
 }
-.user-info__title{
-  color: @mint-color;
-}
+
 .user-info__title::after {
   .green-line();
   top: 35px;
 }
-.user-info-item-name{
-  border-bottom:2px solid black;
+
+.user-info-item {
+  border-bottom: 2px solid black;
   margin-bottom: 20px;
 }
-.user-info__input-title{
+
+.user-info__input-title {
   display: block;
   padding-bottom: 10px;
   font-weight: bold;
 }
-.user-info__input-text{
+
+.user-info__input-value {
   border: none;
   margin-bottom: 16px;
-  color:@form-text-color;
+  color: @form-text-color;
+}
+
+.additionally__header {
+  padding: 25px 0;
+  position: relative;
+}
+
+.additionally__textarea {
+  color: @form-text-color;
+
+  & textarea {
+    border: 2px solid black;
+    width: 234px;
+    height: 120px;
+    resize: none;
+    padding: 10px;
+  }
+}
+
+.order-form__must-field {
+  font-size: 14px;
+  line-height: 16px;
+  color: @form-text-color;
+}
+
+.button-order-form {
+  .btn();
+  background: #fff;
+}
+
+.user-phone__icon-phone::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: url("../img/icon-phone.svg") no-repeat;
+  right: 30px;
+}
+
+.user-email__icon-email::after {
+  content: "";
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  background: url("../img/icon-mail.svg") no-repeat;
+  right: 30px;
 }
