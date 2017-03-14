@@ -4,21 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__inner">
       <div class="logo">
-        <a href="#"><img src="http://placehold.it/150x100" alt="Логотип" /> </a>
+        <a href="#"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
       </div>
       <button class="main-nav-toggle" type="botton">Открыть меню</button>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--ico-serch"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__item--icon-cart"><a href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
     </div>
@@ -26,13 +27,13 @@
   <div class="main">
     <div class="page-preview">
       <div class="page-preview__title">
-        <h1>Милые штуки ручной работы для дома</h1>
+        <h1>Милые штуки ручной <br /> работы для дома</h1>
       </div>
       <div class="page-preview__production">
-        <div class="page-preview__item">
+        <div class="page-preview__item page-preview__item--ico">
           <p>Предметы интерьера</p>
         </div>
-        <div class="page-preview__item">
+        <div class="page-preview__item page-preview__item--color">
           <p>Детские игрушки</p>
         </div>
       </div>
@@ -59,7 +60,7 @@
           </tr>
         </table>
         <div class="featured__image">
-          <img alt="изображение продукта" src="#" />
+          <img alt="изображение продукта" src="img\triple-set-mobile@1x.jpg" />
         </div>
         <span class="featured__price">Цена: 990 руб.</span>
         <a class="featured__buy">Заказать</a>
@@ -69,27 +70,27 @@
       <h2 class="about__title">Коротко о нас</h2>
       <div class="about__list">
         <div class="about__item">
-          <img src="#" alt="цветок" />
+          <img src="img\icon-feature-1.svg" alt="цветок" />
           <p>Экологически чистые материалы</p>
         </div>
         <div class="about__item">
-          <img src="#" alt="прямоугольник" />
+          <img src="img\icon-feature-3.svg" alt="прямоугольник" />
           <p>Скандинавский стиль по российской цене</p>
         </div>
         <div class="about__item">
-          <img src="#" alt="сердце" />
+          <img src="img\icon-feature-5.svg" alt="сердце" />
           <p>Увеличивает лайки на фотографиях</p>
         </div>
         <div class="about__item">
-          <img src="#" alt="пряжа" />
+          <img src="img\icon-feature-2.svg" alt="пряжа" />
           <p>Связано вручную с любовью и умилением</p>
         </div>
         <div class="about__item">
-          <img src="#" alt="ракета" />
+          <img src="img\icon-feature-4.svg" alt="ракета" />
           <p>Поддержка отечественного производителя</p>
         </div>
         <div class="about__item">
-          <img src="#" alt="подарок" />
+          <img src="img\icon-feature-6.svg" alt="подарок" />
           <p>Поставляется в подарочной упаковке</p>
         </div>
       </div>
@@ -124,7 +125,7 @@
         </tr>
       </table>
       <div class="map">
-        <img alt="карта" src="#" />
+        <img alt="карта" src="img\map-mobile@1x.jpg" />
       </div>
       <a class="contact__write-us" href="#">Напишите нам</a>
     </div>
@@ -134,12 +135,12 @@
       <span class="social-links">
           <a class="social-links__instagram" href=""></a>
           <a class="social-links__fb" href=""></a>
-          <a class="social-links__twiter" href=""></a>
+          <a class="social-links__twitter" href=""></a>
         </span>
     </div>
     <div class="page-footer__copyright">
       Разработано:
-      <a class=" btn page-footer__copyright-link" href=" https: //htmlacademy. ru/intensive/adaptive">HTML Academy</a>
+      <a class=" btn page-footer__copyright-link" href=" https: //htmlacademy.ru/intensive/adaptive"></a>
     </div>
   </footer>
 </body>
