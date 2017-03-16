@@ -48,3 +48,25 @@
   background: url("../img/icon-toy.svg") no-repeat;
   position: absolute;
 }
+
+@media @tablet-widths {
+  .page-preview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__title h1{
+      font-size:43px;
+      line-height:50px;
+    }
+  }
+  .page-preview__production{
+    display: flex;
+    flex-direction: row;
+  }
+  .page-preview__title{
+    width: 768px;
+  }
+  .page-preview__item{
+  padding-right: 140px;
+  }
+}

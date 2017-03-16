@@ -2,5 +2,28 @@
 @bg-footer:#f1f1f1;
 @p-color:#444444;
 @form-text-color:#d2d2d2;
+@border-color: #ececec;
 @tablet-widths: ~"(min-width: 768px)";
 @desktop-widths: ~"(min-width: 1200px)";
+
+
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
