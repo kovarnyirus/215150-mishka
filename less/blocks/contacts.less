@@ -87,9 +87,18 @@
 
     margin-left: 175px;
     &__list{
-
       order: 3;
       width: 350px;
+      & tbody{
+        display: flex;
+        flex-direction: column;
+      }
+      & tr{
+        padding-top: 30px;
+        display:flex;
+        box-sizing: border-box;
+        width: 100%;
+      }
     }
     &__title{
       order: 1;
