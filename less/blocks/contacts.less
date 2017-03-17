@@ -10,7 +10,7 @@
   line-height: 30px;
 }
 
-.contact__write-us {
+.contacts__write-us {
   text-transform: uppercase;
   display: block;
   margin: 0 30px;
@@ -25,4 +25,89 @@
 
 .map {
   padding-bottom: 38px;
+}
+
+@media @tablet-widths {
+  .contacts{
+    &__title{
+      position: relative;
+      padding: 0;
+      font-size: 43px;
+      line-height: 50px;
+    }
+    &__field{
+      margin-right: 20px;
+    }
+    &__value{
+      width: 230px;
+    }
+    &__write-us{
+      width:230px;
+      margin: 55px auto;
+    }
+    &__list{
+      margin-top: 30px;
+      display: block;
+      padding: 0;
+
+      & tbody{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      & tr{
+        display:flex;
+        box-sizing: border-box;
+        width: 50%;
+      }
+    }
+  }
+  .contacts__title::before{
+    content: "";
+    right: 50px;
+    bottom: 0;
+    width: 50px;
+    height: 65px;
+    background: url("../img/icon-flag.svg") no-repeat;
+    position: absolute;
+  }
+  .map{
+    padding-top:60px;
+  }
+}
+
+//desktop
+
+@media @desktop-widths {
+  .contacts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-left: 175px;
+    &__list{
+
+      order: 3;
+      width: 350px;
+    }
+    &__title{
+      order: 1;
+      width: 350px;
+    }
+    &__write-us{
+      width: 310px;
+      order: 4;
+    }
+  }
+  .map{
+    padding: 0;
+    order: 2;
+    width: 50%;
+  }
+  .contacts__title::before{
+    left: -100px;
+    top: 0;
+  }
+
 }

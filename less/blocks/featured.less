@@ -73,7 +73,6 @@
     }
     &__buy{
       font-size: 17px;
-
       width: 44%;
     }
   }
@@ -96,7 +95,54 @@
         padding-bottom: 10px;
         border-bottom: 1px solid @border-color;
       }
-      }
+    }
+  }
+}
+
+//desktop
+
+@media @desktop-widths {
+  .featured{
+    position: relative;
+    padding-top: 71px;
+    &__product-week{
+      order: -1;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    &__title{
+      font-size: 53px;
+      line-height: 57px;
+      text-transform: none;
+      width: 80%;
+    }
+    &__image img{
+      z-index: -1;
+      top: -140px;
+      right: 0;
+      top: 71px;
+    }
+    &__price{
+      padding-top: 100px;
+      margin-left:175px;
+      width: 280px;
+    }
+    &__buy{
+      margin-left:175px;
+      width: 280px;
+    }
+  }
+  .feature-product{
+    position: static;
+    padding-bottom: 60px;
+    &__description{
+      margin-left:175px;
+      width: 280px;
+    }
+    &__list{
+      margin-left:175px;
+      width: 280px;
+    }
 
   }
 }

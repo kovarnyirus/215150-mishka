@@ -53,3 +53,35 @@
   line-height: 20px;
   font-weight: bold;
 }
+
+//планшет
+
+@media @tablet-widths {
+  .reviews{
+    padding: 79px 0px 0px 0px;
+    position: relative;
+
+    &__title{
+      font-size: 43px;
+      line-height: 50px;
+      margin-bottom: 50px;
+    }
+    &__write-reviws{
+      position: absolute;
+      width: 176px;
+      top: 79px;
+      right: 0;
+    }
+    &__item p{
+      font-size: 17px;
+    }
+    &__name-author{
+      font-size: 17px;
+    }
+  }
+  .control{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+  }
+}
