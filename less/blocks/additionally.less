@@ -1,0 +1,53 @@
+.additionally__header {
+  padding: 25px 0;
+  position: relative;
+}
+
+.additionally__textarea {
+  color: @form-text-color;
+
+  & textarea {
+    border: 2px solid black;
+    width: 234px;
+    height: 120px;
+    resize: none;
+    padding: 10px;
+  }
+}
+
+
+//@tablet
+
+@media @tablet-widths {
+  .additionally{
+    display: flex;
+    flex-direction: row;
+    width: 668px;
+    margin: 35px auto;
+    &__header{
+      line-height: 16px;
+      font-weight: bold;
+      width: 25%;
+      padding: 0;
+    }
+    &__textarea{
+      width: 71%;
+      & textarea{
+        color: @form-text-color;
+        padding: 10px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+//desktop
+
+@media @desktop-widths {
+  .additionally{
+    width: 1050px;
+    &__textarea{
+      width: 64%;
+    }
+  }
+}
