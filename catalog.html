@@ -9,22 +9,38 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__inner">
+    <div class="page-header__wrapper">
       <div class="logo">
-        <a href="index.html"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
+        <a href="#"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
       </div>
-      <button class="main-nav-toggle" type="botton">Открыть меню</button>
       <nav class="main-nav">
+        <button class="main-nav-toggle" type="botton">X</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a>Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item main-nav__item--ico-serch"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item main-nav__item--icon-cart"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+          <li class="main-nav__item"><a href="#">Распродажа</a></li>
         </ul>
       </nav>
-    </div>
-    <div class="page-header__title">
-      <h1>Каталог товаров</h1>
+      <div class="page-header__user-menu">
+        <ul class="secondary-menu-list">
+          <li class="secondary-menu__item secondary-menu__item--search">
+            <a href="#">
+              <img class="icon-search" src="../img/icon-search.svg" alt="" />
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="secondary-menu__item ">
+            <a href="">
+              <img class="icon-cart" src="../img/icon-cart.svg" alt="" />
+              Корзина: <span>пока пуста</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__text-delivery">
+          Бесплатная доставка по России
+      </div>
     </div>
   </header>
   <div class="main">
