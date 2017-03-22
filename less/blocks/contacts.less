@@ -72,6 +72,7 @@
     position: absolute;
   }
   .map{
+    width: 100%;
     padding-top:60px;
   }
 }
@@ -80,13 +81,10 @@
 
 @media @desktop-widths {
   .contacts{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-
+    margin: 80px 0;
     margin-left: 175px;
     &__wrapper{
+      float: left;
       width: 40%;
       height: 300px;
     }
@@ -108,12 +106,17 @@
 
   }
   .map{
+    float: right;
     padding: 0;
     width: 60%;
   }
   .contacts__title::before{
     left: -100px;
     top: 0;
+  }
+  .contacts__write-us{
+    float: left;
+    width: 20%;
   }
 
 }

@@ -1,7 +1,10 @@
 .page-footer {
+  width: 100%;
+  background-color: @bg-footer;
+  &-wrapper{
   .container();
   margin-top: 30px;
-  background-color: @bg-footer;
+  }
   &__logo{
     display: none;
   }
@@ -60,13 +63,13 @@
 //планшет
 
 @media @tablet-widths {
-  .page-footer {
+  .page-footer{
+    width: 100%;
+    &-wrapper {
     width: 668px;
     padding:50px 50px;
     display: flex;
     justify-content: space-between;
-    &__logo{
-
     }
     &__social{
       padding: 0;
@@ -83,11 +86,16 @@
   }
 }
 
+
 //пк
 
 @media @desktop-widths {
   .page-footer{
-    width: 1050px;
+    width: 100%;
+    &-wrapper{
+      width: 1050px;
+      margin: 0 auto;
+    }
   }
 
 }
