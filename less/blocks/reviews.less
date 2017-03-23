@@ -58,6 +58,8 @@
 
 @media @tablet-widths {
   .reviews{
+    margin: 0 auto;
+    width: 668px;
     padding: 79px 0px 0px 0px;
     position: relative;
 
@@ -83,5 +85,17 @@
     position: absolute;
     bottom: -30px;
     right: 0;
+  }
+}
+
+@media @desktop-widths {
+  .reviews{
+    margin: 0 auto;
+    width: 875px;
+    padding-left: 175px;
+    &__title{
+      font-size: 53px;
+      line-height: 57px;
+    }
   }
 }
