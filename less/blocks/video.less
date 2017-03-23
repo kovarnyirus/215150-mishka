@@ -82,10 +82,31 @@
 }
 @media @desktop-widths {
   .video{
-
-    margin: 0 auto;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: block;
+    width: 1048px;
+    margin-bottom:105px;
+    &-player{
+      width: 65%;
+      float: left;
+    }
+    &-header{
+      float: right;
+      box-sizing: border-box;
+      width: 35%;
+    }
+    &__comment{
+      margin: 0;
+      box-sizing: border-box;
+      float: right;
+      width: 35%;
+      padding: 0 40px;
+    }
+    &__make-order{
+      margin-top: 60px;
+      width: 27%;
+      float: right;
+      box-sizing: border-box;
+      padding: 16px 45px;
+    }
   }
 }
