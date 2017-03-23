@@ -3,6 +3,8 @@
 }
 
 .catalog__item {
+  width: 260px;
+  margin: 0 auto;
   border: 1px solid #ececec;
   margin-bottom: 30px;
 }
@@ -45,9 +47,11 @@
 
 @media @tablet-widths {
   .catalog{
+    margin: 0 auto;
+    width: 668px;
     padding: 0;
     &__item{
-      width: 100;
+      width: 100%;
       display: flex;
       margin-bottom: 50px;
     }
@@ -89,8 +93,10 @@
 
 @media @desktop-widths {
   .catalog{
+    width: 1050px;
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 
     &__item{
       width: 314px;
