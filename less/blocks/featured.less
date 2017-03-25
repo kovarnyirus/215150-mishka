@@ -4,7 +4,7 @@
 }
 
 .featured__title {
-  margin-top: 28px;
+  padding-bottom: 28px;
   line-height: 30px;
 }
 
@@ -20,20 +20,30 @@
 
 .feature-product {
   color: @p-color;
+  margin-bottom: 40px;
   &__description{
-    padding-top: 9px;
-    padding-bottom: 10px;
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 5px;
     font-size: 15px;
     line-height: 24px;
   }
   &__list{
+    margin-top: 9px;
+    margin-bottom: 25px;
     font-size: 15px;
     line-height: 20px;
     width: 260px;
-    & td{
-      margin-left: -1px;
+    & tr{
+      display: block;
       border-bottom: 1px solid @border-color;
-      padding: 20px 0;
+
+    }
+    & td:first-child{
+      width: 91px;
+    }
+    & td{
+      padding: 8px 0;
     }
   }
 }
@@ -48,16 +58,9 @@
 }
 
 .featured__buy {
-  margin-top: 20px;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  padding: 14px 0;
-  border: 2px solid @p-color;
-  color: @p-color;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: bold;
+  .btn();
+  margin-top: 28px;
+  width: 256px;
 }
 
 .featured__buy:hover{
