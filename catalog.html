@@ -9,25 +9,46 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__inner">
+    <div class="page-header__wrapper">
       <div class="logo">
         <a href="index.html"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
       </div>
-      <button class="main-nav-toggle" type="botton">Открыть меню</button>
       <nav class="main-nav">
+        <button class="main-nav-toggle" type="botton">X</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a>Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item main-nav__item--ico-serch"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item main-nav__item--icon-cart"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+          <li class="main-nav__item"><a href="#">Распродажа</a></li>
         </ul>
       </nav>
-    </div>
-    <div class="page-header__title">
-      <h1>Каталог товаров</h1>
+      <div class="page-header__user-menu">
+        <ul class="secondary-menu-list">
+          <li class="secondary-menu__item secondary-menu__item--search">
+            <a href="#">
+              <img class="icon-search" src="../img/icon-search.svg" alt="" />
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="secondary-menu__item ">
+            <a href="">
+              <img class="icon-cart" src="../img/icon-cart.svg" alt="" />
+              Корзина: <span>пока пуста</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__text-delivery">
+          Бесплатная доставка по России
+      </div>
     </div>
   </header>
   <div class="main">
+    <div class="main-header">
+      <div class="main-header__title">
+        <h1>Каталог товаров</h1>
+      </div>
+    </div>
     <div class="catalog">
       <div class="catalog__item">
         <div class="catalog-item-image">
@@ -69,7 +90,7 @@
         </section>
       </div>
     </div>
-    <div class="video">
+    <div class="video clearfix">
       <div class="video-header">
         <span class="video-header__camera"></span>
         <h3>Процесс производства</h3>
@@ -84,16 +105,21 @@
     </div>
   </div>
   <footer class="page-footer">
-    <div class="page-footer__social">
-      <span class="social-links">
+    <div class="page-footer-wrapper">
+      <div class="page-footer__logo">
+        <a href="#"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
+      </div>
+      <div class="page-footer__social">
+        <span class="social-links">
             <a class="social-links__instagram" href=""></a>
             <a class="social-links__fb" href=""></a>
             <a class="social-links__twitter" href=""></a>
           </span>
-    </div>
-    <div class="page-footer__copyright">
-      Разработано:
-      <a class=" btn page-footer__copyright-link" href=" https: //htmlacademy.ru/intensive/adaptive"></a>
+      </div>
+      <div class="page-footer__copyright">
+        Разработано:
+        <a class=" btn page-footer__copyright-link" href=" https: //htmlacademy.ru/intensive/adaptive"></a>
+      </div>
     </div>
   </footer>
 </body>

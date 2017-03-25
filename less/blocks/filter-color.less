@@ -13,3 +13,55 @@
     font-weight: bold;
   }
 }
+
+//tablet
+
+@media @tablet-widths {
+  .filter-color{
+    padding: 0;
+    margin: 40px auto;
+    background-color: @bg-footer;
+    &__wrapper{
+      padding-top: 30px;
+      width: 668px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__header{
+      width: 25%;
+    }
+    &__list{
+      width: 75%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__item{
+      font-size: 19px;
+      line-height: 18px;
+      margin-bottom:30px;
+      width: 50%;
+    }
+  }
+  .filter-color__title::after{
+    display: none;
+  }
+}
+
+//desktop
+
+@media @desktop-widths {
+  .filter-color{
+    &__wrapper{
+    width: 1050px;
+  }
+    &__header{
+      width: 17%;
+    }
+    &__item{
+      width: 33%;
+    }
+  }
+}

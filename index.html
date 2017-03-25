@@ -9,19 +9,38 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__inner">
+    <div class="page-header__wrapper">
       <div class="logo">
         <a href="#"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
       </div>
-      <button class="main-nav-toggle" type="botton">Открыть меню</button>
       <nav class="main-nav">
+        <button class="main-nav-toggle" type="botton">X</button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item main-nav__item--ico-serch"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item main-nav__item--icon-cart"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+          <li class="main-nav__item"><a href="#">Распродажа</a></li>
         </ul>
       </nav>
+      <div class="page-header__user-menu">
+        <ul class="secondary-menu-list">
+          <li class="secondary-menu__item secondary-menu__item--search">
+            <a href="#">
+              <img class="icon-search" src="../img/icon-search.svg" alt="" />
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="secondary-menu__item ">
+            <a href="">
+              <img class="icon-cart" src="../img/icon-cart.svg" alt="" />
+              Корзина: <span>пока пуста</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__text-delivery">
+          Бесплатная доставка по России
+      </div>
     </div>
   </header>
   <div class="main">
@@ -30,12 +49,12 @@
         <h1>Милые штуки ручной <br /> работы для дома</h1>
       </div>
       <div class="page-preview__production">
-        <div class="page-preview__item page-preview__item--ico">
+        <a href="#" class="page-preview__item page-preview__item--ico">
           <p>Предметы интерьера</p>
-        </div>
-        <div class="page-preview__item page-preview__item--color">
+        </a>
+        <a href="#" class="page-preview__item page-preview__item--color">
           <p>Детские игрушки</p>
-        </div>
+        </a>
       </div>
     </div>
     <div class="featured">
@@ -107,40 +126,47 @@
         </div>
       </div>
       <div class="control">
-        <button class=" reviews__prev" type=" button">Предыдущий отзыв</button>
-        <button class=" reviews__next" type=" button">Следующий отзыв</button>
+        <button class=" reviews__prev" type=" button"></button>
+        <button class=" reviews__next" type=" button"></button>
       </div>
       <a class="reviews__write-reviws" href="#">Написать</a>
     </div>
-    <div class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <table class="contacts__list">
-        <tr>
-          <td>e-mail:</td>
-          <td>info@mimimishkashop.ru</td>
-        </tr>
-        <tr>
-          <td>адрес:</td>
-          <td>г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</td>
-        </tr>
-      </table>
-      <div class="map">
-        <img alt="карта" src="img\map-mobile@1x.jpg" />
+    <div class="contacts clearfix">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__list">
+          <tr>
+            <td class="contacts__field">e-mail:</td>
+            <td class="contacts__value">info@mimimishkashop.ru</td>
+          </tr>
+          <tr>
+            <td class="contacts__field">адрес:</td>
+            <td class="contacts__value">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </table>
       </div>
-      <a class="contact__write-us" href="#">Напишите нам</a>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124077!2d30.32089461622911!3d59.93879686904776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1490171700855" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <a class="contacts__write-us" href="#">Напишите нам</a>
     </div>
   </div>
   <footer class="page-footer">
-    <div class="page-footer__social">
-      <span class="social-links">
-          <a class="social-links__instagram" href=""></a>
-          <a class="social-links__fb" href=""></a>
-          <a class="social-links__twitter" href=""></a>
-        </span>
-    </div>
-    <div class="page-footer__copyright">
-      Разработано:
-      <a class=" btn page-footer__copyright-link" href=" https: //htmlacademy.ru/intensive/adaptive"></a>
+    <div class="page-footer-wrapper">
+      <div class="page-footer__logo">
+        <a href="#"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
+      </div>
+      <div class="page-footer__social">
+        <span class="social-links">
+            <a class="social-links__instagram" href=""></a>
+            <a class="social-links__fb" href=""></a>
+            <a class="social-links__twitter" href=""></a>
+          </span>
+      </div>
+      <div class="page-footer__copyright">
+        Разработано:
+        <a class=" btn page-footer__copyright-link" href=" https: //htmlacademy.ru/intensive/adaptive"></a>
+      </div>
     </div>
   </footer>
 </body>

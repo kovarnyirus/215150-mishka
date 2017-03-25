@@ -30,33 +30,12 @@
   color: @form-text-color;
 }
 
-.additionally__header {
-  padding: 25px 0;
-  position: relative;
-}
-
-.additionally__textarea {
-  color: @form-text-color;
-
-  & textarea {
-    border: 2px solid black;
-    width: 234px;
-    height: 120px;
-    resize: none;
-    padding: 10px;
-  }
-}
-
 .order-form__must-field {
   font-size: 14px;
   line-height: 16px;
   color: @form-text-color;
 }
 
-.button-order-form {
-  .btn();
-  background: #fff;
-}
 .user-email__icon-email,
 .user-phone__icon-phone {
   position: relative;
@@ -71,8 +50,6 @@
   right: 30px;
 }
 
-
-
 .user-email__icon-email::after {
   content: "";
   width: 40px;
@@ -80,4 +57,103 @@
   position: absolute;
   background: url("../img/icon-mail.svg") no-repeat;
   right: 30px;
+}
+
+//@tablet
+
+@media @tablet-widths {
+  .user-info{
+    width: 668px;
+    padding: 0;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__wrapper{
+      width: 668px;
+      margin: 0 auto;
+    }
+    &__header{
+      line-height: 16px;
+      font-weight: bold;
+      width: 25%;
+      padding: 0;
+    }
+    &__list{
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &-item {
+      border: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 19px;
+      line-height: 18px;
+      & lable{
+        font-weight: bold;
+        margin-right: 20px;
+      }
+      & input{
+        padding-bottom: 5px;
+        flex-grow: 1;
+        border-bottom: 2px solid #000;
+      }
+    }
+    &__title::after{
+      display: none;
+    }
+    &--color{
+      width: 100%;
+      padding: 30px 0;
+      background-color: @bg-footer
+    }
+  }
+  .user-phone__icon-phone{
+    width: 75%;
+    border-bottom: 2px solid #000;
+    & input{
+      padding-left: 25px;
+      background-color: @bg-footer;
+      border: none;
+    }
+  }
+  .user-email__icon-email{
+    width: 75%;
+    border-bottom: 2px solid #000;
+    & input{
+      padding-left: 25px;
+      background-color: @bg-footer;
+      border: none;
+    }
+  }
+}
+
+
+//desktop
+
+@media @desktop-widths {
+  .user-info{
+    width: 1050px;
+    &__list{
+      width: 700px;
+    }
+    &--color{
+      width: 100%;
+      padding: 30px 0;
+      background-color: @bg-footer
+    }
+    &__wrapper{
+      width: 1050px;
+    }
+    .user-phone__icon-phone{
+      width: 700px;
+    }
+    .user-email__icon-email{
+      width: 700px;
+    }
+  }
+
 }

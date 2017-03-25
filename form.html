@@ -9,25 +9,44 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__inner">
+    <div class="page-header__wrapper">
       <div class="logo">
         <a href="index.html"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
       </div>
-      <button class="main-nav-toggle" type="botton">Открыть меню</button>
       <nav class="main-nav">
+        <button class="main-nav-toggle" type="botton">X</button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a>Вязание на заказ</a></li>
-          <li class="main-nav__item main-nav__item--ico-serch"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item main-nav__item--icon-cart"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+          <li class="main-nav__item"><a href="#">Распродажа</a></li>
         </ul>
       </nav>
-    </div>
-    <div class="page-header__title">
-      <h1>Вязание на заказ</h1>
+      <div class="page-header__user-menu">
+        <ul class="secondary-menu-list">
+          <li class="secondary-menu__item secondary-menu__item--search">
+            <a href="#">
+              <img class="icon-search" src="../img/icon-search.svg" alt="" />
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="secondary-menu__item ">
+            <a href="">
+              <img class="icon-cart" src="../img/icon-cart.svg" alt="" />
+              Корзина: <span>пока пуста</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__text-delivery">
+          Бесплатная доставка по России
+      </div>
     </div>
   </header>
   <div class="order-form">
+    <div class="order-form__title">
+      <h1>Вязание на заказ</h1>
+    </div>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <p class="order-form__description">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -36,102 +55,119 @@
         <div class="filter-type__header">
           <span class="filter-type__title">Тип</span>
         </div>
-        <div class="filter-type__item">
-          <input type="radio" class="filter-type-radio" id="accessories-interior" checked name="filter-type-radio" value="check-accessories">
-          <label for="accessories-interior" class="filter-type__text">Аксессуар для интерьера</lable>
-        </div>
-        <div class="filter-type__item">
-          <input type="radio" id="children-toy" class="filter-type-radio" name="filter-type-radio" value="check-children-toy">
-          <label for="children-toy" class="filter-type__text">Детская игрушка</lable>
+        <div class="filter-type__list">
+          <div class="filter-type__item">
+            <input type="radio" class="filter-type-radio" id="accessories-interior" checked name="filter-type-radio" value="check-accessories">
+            <label for="accessories-interior" class="filter-type__text">Аксессуар для интерьера</lable>
+          </div>
+          <div class="filter-type__item">
+            <input type="radio" id="children-toy" class="filter-type-radio" name="filter-type-radio" value="check-children-toy">
+            <label for="children-toy" class="filter-type__text">Детская игрушка</lable>
+          </div>
         </div>
       </div>
       <div class="filter-color">
-        <div class="filter-type__header">
-          <span class="filter-color__title ">Цвет</span>
-        </div>
-        <div class="filter-color__item">
-          <input type="checkbox" id="color-white" name="color-white" value="white" checked>
-          <label for="color-white"><span class="filter-color_text">Белый</span></lable>
-        </div>
-        <div class="filter-color__item">
-          <input type="checkbox" id="color-grey" name="color-grey" value="grey" checked>
-          <label for="color-grey"><span class="filter-color_text">Серый</span></lable>
-        </div>
-        <div class="filter-color__item">
-          <input type="checkbox" id="color-tiffani" name="color-tiffani" value="tiffani">
-          <label for="color-tiffani"><span class="filter-color_text">"Тиффани"</span></lable>
-        </div>
-        <div class="filter-color__item">
-          <input type="checkbox" id="color-black" name="black" value="black">
-          <label for="color-black"><span class="filter-color_text">Черный</span></lable>
-        </div>
-        <div class="filter-color__item">
-          <input type="checkbox" id="color-pink" name="pink" value="pink">
-          <label for="color-pink"><span class="filter-color_text">Розовый</span></lable>
-        </div>
-        <div class="filter-color__item">
-          <input type="checkbox" id="color-orange" name="orange" value="orange">
-          <label for="color-orange"><span class="filter-color_text">Оранжевый</span></lable>
+        <div class="filter-color__wrapper">
+          <div class="filter-type__header">
+            <span class="filter-color__title ">Цвет</span>
+          </div>
+          <div class="filter-color__list">
+            <div class="filter-color__item">
+              <input type="checkbox" id="color-white" name="color-white" value="white" checked>
+              <label for="color-white"><span class="filter-color_text">Белый</span></lable>
+            </div>
+            <div class="filter-color__item">
+              <input type="checkbox" id="color-grey" name="color-grey" value="grey" checked>
+              <label for="color-grey"><span class="filter-color_text">Серый</span></lable>
+            </div>
+            <div class="filter-color__item">
+              <input type="checkbox" id="color-tiffani" name="color-tiffani" value="tiffani">
+              <label for="color-tiffani"><span class="filter-color_text">"Тиффани"</span></lable>
+            </div>
+            <div class="filter-color__item">
+              <input type="checkbox" id="color-black" name="black" value="black">
+              <label for="color-black"><span class="filter-color_text">Черный</span></lable>
+            </div>
+            <div class="filter-color__item">
+              <input type="checkbox" id="color-pink" name="pink" value="pink">
+              <label for="color-pink"><span class="filter-color_text">Розовый</span></lable>
+            </div>
+            <div class="filter-color__item">
+              <input type="checkbox" id="color-orange" name="orange" value="orange">
+              <label for="color-orange"><span class="filter-color_text">Оранжевый</span></lable>
+            </div>
+          </div>
         </div>
       </div>
       <div class="user-info">
         <div class="user-info__header">
           <span class="user-info__title">фио</span>
         </div>
-        <div class="user-info-item">
-          <lable class="user-info__input-title" for="name">Имя</lable>
-          <input class="user-info__input-value" type="text" name="user-name" id="name" placeholder="Введите ваше имя*" />
-        </div>
-        <div class="user-info-item">
-          <lable class="user-info__input-title" for="surname">Фамилия</lable>
-          <input class="user-info__input-value" type="text" name="user-surname" id="surname" placeholder="Укажите фамилию*" />
-        </div>
-        <div class="user-info-item">
-          <lable class="user-info__input-title" for="patronymic">Отчество</lable>
-          <input class="user-info__input-value" type="text" name="user-patronymic" id="patronymic" placeholder="Отчество, если желаете" />
-        </div>
-        <div class="user-info-item">
-          <div class="user-info__header">
-            <span class="user-info__title">тел</span>
+        <div class="user-info__list">
+          <div class="user-info-item">
+            <lable class="user-info__input-title" for="name">Имя</lable>
+            <input class="user-info__input-value" type="text" name="user-name" id="name" placeholder="Введите ваше имя*" />
           </div>
-          <div class="user-phone__icon-phone">
-            <input class="user-info__input-value" type="tel" name="user-phone" id="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ*" />
+          <div class="user-info-item">
+            <lable class="user-info__input-title" for="surname">Фамилия</lable>
+            <input class="user-info__input-value" type="text" name="user-surname" id="surname" placeholder="Укажите фамилию*" />
+          </div>
+          <div class="user-info-item">
+            <lable class="user-info__input-title" for="patronymic">Отчество</lable>
+            <input class="user-info__input-value" type="text" name="user-patronymic" id="patronymic" placeholder="Отчество, если желаете" />
           </div>
         </div>
-        <div class="user-info-item">
-          <div class="user-info__header">
-            <span class="user-info__title">e-mail</span>
+      </div>
+      <div class="user-info user-info--color">
+      <div class="user-info__wrapper">
+          <div class="user-info-item">
+            <div class="user-info__header">
+              <span class="user-info__title">тел</span>
+            </div>
+            <div class="user-phone__icon-phone">
+              <input class="user-info__input-value" type="tel" name="user-phone" id="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ*" />
+            </div>
           </div>
-          <div class="user-email__icon-email">
-            <input class="user-info__input-value" type="email" name="user-email" id="email" placeholder="Ваш Email*" required="2222" />
+          <div class="user-info-item">
+            <div class="user-info__header">
+              <span class="user-info__title">e-mail</span>
+            </div>
+            <div class="user-email__icon-email">
+              <input class="user-info__input-value" type="email" name="user-email" id="email" placeholder="Ваш Email*" required="2222" />
+            </div>
           </div>
         </div>
-        <div class="additionally">
-          <div class="additionally__header">
-            <span class="user-info__title">доп</span>
-          </div>
-          <div class="additionally__textarea">
-            <textarea placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </div>
+      </div>
+      <div class="additionally">
+        <div class="additionally__header">
+          <span class="user-info__title">доп</span>
+        </div>
+        <div class="additionally__textarea">
+          <textarea placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
         <p class="order-form__must-field">
           *Поля обязательны для заполнения
         </p>
         <button class="button-order-form" type="submit">Отправить заказ</button>
+      </div>
     </form>
-    </div>
   </div>
   <footer class="page-footer">
-    <div class="page-footer__social">
-      <span class="social-links">
-          <a class="social-links__instagram" href=""></a>
-          <a class="social-links__fb" href=""></a>
-          <a class="social-links__twitter" href=""></a>
-        </span>
-    </div>
-    <div class="page-footer__copyright">
-      Разработано:
-      <a class=" btn page-footer__copyright-link" href=" https: //htmlacademy.ru/intensive/adaptive"></a>
+    <div class="page-footer-wrapper">
+      <div class="page-footer__logo">
+        <a href="#"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
+      </div>
+      <div class="page-footer__social">
+        <span class="social-links">
+            <a class="social-links__instagram" href=""></a>
+            <a class="social-links__fb" href=""></a>
+            <a class="social-links__twitter" href=""></a>
+          </span>
+      </div>
+      <div class="page-footer__copyright">
+        Разработано:
+        <a class=" btn page-footer__copyright-link" href=" https: //htmlacademy.ru/intensive/adaptive"></a>
+      </div>
     </div>
   </footer>
 </body>

@@ -1,5 +1,6 @@
 .about {
-  padding: 0 30px;
+  margin: 0 auto;
+  width: 260px;
 }
 
 .about__title {
@@ -16,4 +17,33 @@
   line-height: 20px;
   margin: 20px 0 0;
   padding-right: 10px;
+}
+
+@media @tablet-widths {
+  .about {
+    margin: 0 auto;
+    width: 668px;
+    padding: 0;
+    margin-top: 65px;
+
+    &__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    &__item{
+      width: 32%;
+      margin-right: 119px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .about {
+    width: 700px;
+    &__title{
+      font-size: 53px;
+      line-height: 57px
+    }
+  }
 }

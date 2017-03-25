@@ -27,7 +27,7 @@
 
 .video-player {
   width: 100%;
-  height: auto;
+  height: 100%;
   background: url("../img/video-mobile@1x.jpg") 100% 0 no-repeat;
 }
 
@@ -42,4 +42,71 @@
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
+}
+
+//tablet
+
+@media @tablet-widths {
+  .video {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .video-player {
+    order: -1;
+    height: 455px;
+    border-bottom: 1px solid @border-color;
+    background-size: cover;
+  }
+  .video-header {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 40px;
+    & h3{
+      font-size:20px;
+      line-height: 24 px;
+      font-weight: bold;
+    }
+  }
+  .video__comment{
+    font-size: 15px;
+    line-height: 30px;
+    color: @p-color
+  }
+  .video__make-order{
+    width:100%;
+    margin:  40px 40px;
+  }
+}
+@media @desktop-widths {
+  .video{
+    display: block;
+    width: 1048px;
+    margin-bottom:105px;
+    &-player{
+      width: 65%;
+      float: left;
+    }
+    &-header{
+      float: right;
+      box-sizing: border-box;
+      width: 35%;
+    }
+    &__comment{
+      margin: 0;
+      box-sizing: border-box;
+      float: right;
+      width: 35%;
+      padding: 0 40px;
+    }
+    &__make-order{
+      margin-top: 60px;
+      width: 27%;
+      float: right;
+      box-sizing: border-box;
+      padding: 16px 45px;
+    }
+  }
 }

@@ -1,18 +1,41 @@
 .featured {
-  padding: 0 30px;
+  margin: 0 auto;
+  width: 260px;
 }
 
 .featured__title {
-  margin-top: 33px;
+  margin-top: 28px;
+  line-height: 30px;
 }
 
 .featured__product-week {
+  padding-top: 3px;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height:20px;
+  font-weight: bold;
   margin: 0;
   color: @mint-color;
 }
 
 .feature-product {
   color: @p-color;
+  &__description{
+    padding-top: 9px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  &__list{
+    font-size: 15px;
+    line-height: 20px;
+    width: 260px;
+    & td{
+      margin-left: -1px;
+      border-bottom: 1px solid @border-color;
+      padding: 20px 0;
+    }
+  }
 }
 
 .featured__price {
@@ -35,4 +58,130 @@
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
+}
+
+.featured__buy:hover{
+  background-color:@p-color;
+  color:#ffffff;
+}
+
+.featured__buy:active{
+  background-color:@p-color;
+  color:#858585;
+}
+
+//планшет
+
+
+
+@media @tablet-widths {
+  .reviews{
+    background: url("../img/review@1x.jpg") no-repeat ;
+  }
+  .featured{
+    width: 668px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    &__title{
+      text-transform: uppercase;
+      font-size:43px;
+      line-height: 50px;
+      font-weight: bold;
+      width: 90%;
+    }
+    &__product-week{
+      width: 10%;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 33px;
+    }
+    &__image img{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+      }
+    &__price{
+      font-size: 20px;
+      width: 44%;
+      margin-bottom: 35px;
+      margin-top: 55px;
+    }
+    &__buy{
+      font-size: 17px;
+      width: 44%;
+    }
+  }
+
+  .feature-product{
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+
+    &__description {
+      width: 44%;
+      margin: 0;
+      margin-bottom: 55px;
+      }
+    &__list{
+      width: 44%;
+      margin-top: 15px;
+      & td{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid @border-color;
+      }
+    }
+  }
+}
+
+//desktop
+
+@media @desktop-widths {
+  .featured{
+    width: 1050px;
+    position: relative;
+    padding-top: 71px;
+    &__product-week{
+      order: -1;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    &__title{
+      font-size: 53px;
+      line-height: 57px;
+      text-transform: none;
+      width: 80%;
+    }
+    &__image img{
+      z-index: -1;
+      top: -140px;
+      right: 0;
+      top: 71px;
+    }
+    &__price{
+      padding-top: 93px;
+      margin-left:175px;
+      width: 280px;
+    }
+    &__buy{
+      margin-left:175px;
+      width: 280px;
+    }
+  }
+  .feature-product{
+    position: static;
+    padding-bottom: 60px;
+    &__description{
+      margin-left:175px;
+      width: 280px;
+    }
+    &__list{
+      margin-left:175px;
+      width: 280px;
+    }
+
+  }
 }

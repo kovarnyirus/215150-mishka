@@ -1,24 +1,87 @@
 .page-header {
   .container();
   background-color: #ffffff;
+  border-bottom: 1px solid @border-color;
 }
 
-.page-header__title {
-  background-color: @bg-footer;
-  margin-bottom: 30px;
-  padding: 77px 0;
+.page-header__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
 }
 
-.main-nav__list {
+.main-nav {
+  width: 100%;
+
+  &-toggle {
+    position: absolute;
+    right: 45px;
+    top: 10px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    padding-top: 32px;
+    padding-bottom: 35px;
+    padding-left: 74px;
+    border-top: 1px solid #ececec;
+    position: relative;
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      display: none;
+    }
+
+    & a {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: bold;
+      color: #000;
+    }
+  }
+}
+
+.main-nav__item a:hover,
+.secondary-menu__item a:hover {
+  color: @color-text-hover;
+}
+
+.main-nav__item a:active,
+.secondary-menu__item a:active {
+  color: #cacaca;
+}
+.page-header__user-menu {
+  width: 100%;
+}
+
+.page-header__text-delivery {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+.main-nav__item:last-child {
+  border-bottom: 1px solid #ececec;
+}
+
+.secondary-menu-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.main-nav__item {
+.secondary-menu__item {
   padding-top: 32px;
   padding-bottom: 35px;
-  padding-left: 74px;
+  padding-left: 14px;
   border-top: 1px solid #ececec;
   position: relative;
 
@@ -30,26 +93,172 @@
   }
 }
 
-.main-nav__item:last-child {
-  border-bottom: 1px solid #ececec;
-}
-
-.main-nav__item--ico-serch::after {
-  content: "";
+.icon-search {
+  padding-right: 25px;
   width: 21px;
   height: 21px;
-  position: absolute;
-  background: url("../img/icon-search.svg") no-repeat;
-  margin-top: 5px;
-  left: 30px;
 }
 
-.main-nav__item--icon-cart::after {
-  content: "";
+.icon-cart {
+  padding-right: 25px;
   width: 21px;
   height: 21px;
-  position: absolute;
-  background: url("../img/icon-cart.svg") no-repeat;
-  margin-top: 5px;
-  left: 30px;
+}
+
+.logo {
+  display: block;
+  padding: 20px 0 18px;
+  margin: 0 auto;
+}
+
+//tablet
+
+@media @tablet-widths {
+  .page-header {
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+
+    &__wrapper {
+      width: 668px;
+      margin: 0 auto;
+    }
+
+    &__user-menu {
+      order: 2;
+      width: 45%;
+      text-align: right;
+    }
+  }
+
+  .logo {
+    order: 1;
+    margin: 0;
+    text-align: left;
+    width: 50%;
+    margin-bottom: 20px;
+    border-right: 1px solid @border-color;
+  }
+
+  .main-nav {
+    order: 3;
+    &-toggle {
+      order: 2;
+      display: none;
+    }
+
+    &__list {
+      display: inline-flex;
+      font-size: 15px;
+      line-height: 24px;
+      width: 57%;
+    }
+
+    &__item {
+      padding: 0 25px 0 0;
+      margin: 0;
+      border: none;
+    }
+  }
+
+  .secondary-menu {
+    &-list {
+      display: inline-flex;
+      padding: 0;
+      margin: 0;
+      padding-top: 20px;
+    }
+
+    &__item {
+      padding: 0;
+      border: none;
+    }
+  }
+
+  .secondary-menu__item--search{
+    padding-right: 20px;
+    border-right: 1px solid @border-color;
+  }
+  .header__text-delivery {
+    display: block;
+    bottom: 0;
+  }
+}
+
+//desktop
+
+@media @desktop-widths {
+  .page-header {
+    &__wrapper {
+      width: 1050px;
+      margin: 0 auto;
+    }
+
+    &__user-menu {
+      order: 3;
+      width: 35%;
+      text-align: right;
+    }
+  }
+
+  .logo {
+    order: 2;
+    width: 13%;
+    border: none;
+  }
+
+  .main-nav {
+    width: 42%;
+    order: 1;
+    &-toggle {
+      display: none;
+    }
+
+    &__list {
+      width: 100%;
+      display: block;
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    &__item {
+      width: 43%;
+      display: inline-block;
+      padding: 0 25px 0 0;
+      margin: 25px 0;
+      border: none;
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        display: inline-block;
+      }
+    }
+  }
+  .main-nav__item:last-child{
+    border: none;
+  }
+
+  .secondary-menu {
+    &-list {
+      display: inline-flex;
+      padding: 0;
+      margin: 0;
+      padding-top: 20px;
+    }
+
+    &__item {
+      padding: 0;
+      border: none;
+    }
+  }
+
+  .secondary-menu__item--search{
+    padding-right: 20px;
+    border-right: 1px solid @border-color;
+  }
+  .header__text-delivery {
+    display: block;
+    bottom: 0;
+  }
 }

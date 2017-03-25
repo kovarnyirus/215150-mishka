@@ -22,3 +22,36 @@
   color:#000;
   font-weight: bold;
 }
+
+//tablet
+
+@media @tablet-widths {
+  .filter-type{
+    width: 668px;
+    padding: 0;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__header{
+      line-height: 16px;
+      font-weight: bold;
+      width: 25%;
+      padding: 0;
+    }
+    &__item{
+      font-size: 19px;
+      line-height: 18px;
+      margin-bottom:30px;
+    }
+    &__title::after{
+      display: none;
+    }
+  }
+}
+
+//desktop
+
+@media @desktop-widths {
+
+}
