@@ -2,15 +2,26 @@
   width: 260px;
   margin: 0 auto;
   font-size: 18px;
+  & h2{
+    font-size:18px;
+  }
 }
 
 .contacts{
+  padding-top: 43px;
+  margin-bottom: 39px;
   &__list {
-  padding: 0 30px;
-  color: @p-color;
-  font-size: 15px;
-  line-height: 30px;
+    padding-top: 23px;
+    color: @p-color;
+    font-size: 15px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    & tr {
+      display: block;
+      margin-bottom: 22px;
+    }
   }
+
   &__write-us {
     width: 256px;
     margin: 0 auto;
@@ -30,7 +41,7 @@
 }
 
 .map {
-  padding-bottom: 38px;
+  padding-bottom: 37px;
 }
 
 @media @tablet-widths {
