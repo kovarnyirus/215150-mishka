@@ -1,0 +1,75 @@
+.user-contacts{
+  &__header {
+    padding: 0;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 23px;
+  }
+  &__wrapper{
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+.user-contacts__title {
+  color: @mint-color;
+  text-transform: uppercase;
+}
+
+.user-contacts__title::after {
+  .green-line();
+  top: 9px;
+}
+
+.user-contacts__list{
+  margin-bottom: 30px;
+}
+
+.user-contacts-item {
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+}
+
+.user-contacts__input-title {
+  font-size:17px;
+  line-height: 18px;
+  display: block;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.user-contacts__input-value {
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  margin-bottom: 15px;
+  color: @form-text-color;
+}
+
+.user-email__icon-email,
+.user-phone__icon-phone {
+  position: relative;
+}
+
+.user-phone__icon-phone::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: url("../img/icon-phone.svg") no-repeat;
+  top: -3px;
+  right: 2px;
+}
+
+.user-email__icon-email::after {
+  content: "";
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  background: url("../img/icon-mail.svg") no-repeat;
+  top: -2px;
+  right: -5px;
+}

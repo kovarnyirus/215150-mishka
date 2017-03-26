@@ -1,10 +1,15 @@
 .user-info{
   width: 260px;
   margin: 0 auto;
-}
-.user-info__header {
-  padding: 25px 0;
-  position: relative;
+  &__header {
+    padding: 0;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
 }
 
 .user-info__title {
@@ -14,30 +19,36 @@
 
 .user-info__title::after {
   .green-line();
-  top: 35px;
+  top: 9px;
+}
+
+.user-info__list{
+  margin-bottom: 30px;
 }
 
 .user-info-item {
   border-bottom: 2px solid black;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .user-info__input-title {
+  font-size:17px;
+  line-height: 18px;
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   font-weight: bold;
 }
 
 .user-info__input-value {
+  font-size: 17px;
+  line-height: 18px;
   border: none;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   color: @form-text-color;
 }
 
-.order-form__must-field {
-  font-size: 14px;
-  line-height: 16px;
-  color: @form-text-color;
+.user-info__header--padding{
+  padding-bottom: 24px;
 }
 
 .user-email__icon-email,
@@ -51,7 +62,8 @@
   height: 30px;
   position: absolute;
   background: url("../img/icon-phone.svg") no-repeat;
-  right: 30px;
+  top: -3px;
+  right: 2px;
 }
 
 .user-email__icon-email::after {

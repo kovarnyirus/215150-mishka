@@ -8,14 +8,48 @@
 
 .filter-color__title::after {
   .green-line();
-  top: 35px;
+}
+
+.filter-type-checkbox{
+  display: none;
+}
+
+.filter-color__list{
+  padding-top: 2px;
 }
 
 .filter-color__item {
-  padding-bottom: 10px;
-  & label {
+  width: 190px;
+  padding-left: 64px;
+  margin-top: 23px;
+  position: relative;
+  margin-bottom: 42px;
+  & label{
+    font-size: 17px;
+    line-height: 18px;
     font-weight: bold;
+    cursor: pointer;
   }
+}
+
+.filter-color__item input[type="checkbox"] + label::before{
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: -10px;
+  width: 38px;
+  height: 35px;
+  border: 2px solid @p-color;
+}
+
+.filter-color__item input[type="checkbox"]:checked + label::after{
+  position: absolute;
+  content: "";
+  left: 5px;
+  top: -4px;
+  width: 33px;
+  height: 23px;
+  background: url("../img/icon-tick.svg")
 }
 
 //tablet

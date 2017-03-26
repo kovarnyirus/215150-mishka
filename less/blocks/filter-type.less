@@ -1,11 +1,16 @@
 .filter-type{
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 19px;
 
   &__header {
-    padding: 25px 0;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: bold;
+    padding-top: 23px;
     position: relative;
     text-transform: uppercase;
+    padding-bottom: 12px;
   }
   &__title{
     color: @mint-color;
@@ -13,19 +18,53 @@
 }
 .filter-type__title::after {
   .green-line();
-  top: 35px;
+
 }
 
 .filter-type-radio {
   display: none;
 }
 .filter-type__item{
+  width: 190px;
+  padding-left: 64px;
+  margin-top: 23px;
   position: relative;
+
+  & label{
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
 }
 .filter-type__text{
   color:#000;
   font-weight: bold;
 }
+
+.filter-type__item input[type="radio"] + label::before{
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: -10px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid @p-color;
+  border-radius: 50%;
+}
+
+.filter-type__item input[type="radio"]:checked + label::after{
+  position: absolute;
+  content: "";
+  left: 13px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #62d1ba;
+}
+
+
 
 //tablet
 
