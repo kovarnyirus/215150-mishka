@@ -116,7 +116,7 @@
 @media @tablet-widths {
   .page-header {
     width: 100%;
-    height: 75px;
+    height: 88px;
     margin: 0;
     padding: 0;
 
@@ -133,11 +133,12 @@
   }
 
   .logo {
+    min-height: 50px;
     order: 1;
     margin: 0;
     text-align: left;
-    width: 50%;
-    margin-bottom: 20px;
+    width: 48%;
+    margin-bottom: 8px;
     border-right: 1px solid @border-color;
   }
 
@@ -150,15 +151,18 @@
 
     &__list {
       display: inline-flex;
-      font-size: 15px;
-      line-height: 24px;
       width: 57%;
     }
 
     &__item {
-      padding: 0 25px 0 0;
+      padding: 10px 37px 0 0;
       margin: 0;
       border: none;
+
+      & a {
+        font-size: 15px;
+        line-height: 24px;
+      }
     }
   }
 
@@ -180,7 +184,10 @@
     padding-right: 20px;
     border-right: 1px solid @border-color;
   }
-  .header__text-delivery {
+  .page-header__text-delivery {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
     display: block;
     bottom: 0;
   }

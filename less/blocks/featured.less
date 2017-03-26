@@ -76,11 +76,10 @@
 //планшет
 
 
-
 @media @tablet-widths {
-  .reviews{
-    background: url("../img/review@1x.jpg") no-repeat ;
-  }
+  // .reviews{
+  //   background: url("../img/review@1x.jpg") no-repeat ;
+  // }
   .featured{
     width: 668px;
     margin: 0 auto;
@@ -88,53 +87,57 @@
     display: flex;
     flex-wrap: wrap;
     &__title{
-      text-transform: uppercase;
       font-size:43px;
       line-height: 50px;
       font-weight: bold;
-      width: 90%;
+      width: 85%;
     }
     &__product-week{
-      width: 10%;
+      width: 11%;
       text-align: center;
       text-transform: uppercase;
-      margin-top: 33px;
+      margin-top: 5px;
     }
     &__image img{
       position: absolute;
       right: 0;
-      top: 0;
+      top: 7px;
       width: 50%;
       }
     &__price{
       font-size: 20px;
       width: 44%;
       margin-bottom: 35px;
-      margin-top: 55px;
+      margin-top: 52px;
     }
     &__buy{
       font-size: 17px;
-      width: 44%;
+      width: 43%;
     }
   }
 
   .feature-product{
+    margin: 0;
     width: 100%;
     position: relative;
-    margin-top: 50px;
+    margin-top: 22px;
+    padding-bottom: 70px;
 
     &__description {
       width: 44%;
       margin: 0;
-      margin-bottom: 55px;
+      padding: 0;
+      margin-bottom: 32px;
+      font-size: 17px;
+      line-height: 30px;
       }
     &__list{
+      padding: 0;
+      margin: 0;
       width: 44%;
-      margin-top: 15px;
       & td{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid @border-color;
+        padding-top: 9px;
+        padding-bottom: 7px;
       }
     }
   }

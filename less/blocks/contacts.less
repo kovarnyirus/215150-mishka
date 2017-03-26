@@ -2,14 +2,14 @@
   width: 260px;
   margin: 0 auto;
   font-size: 18px;
-  & h2{
-    font-size:18px;
-  }
 }
 
 .contacts{
   padding-top: 43px;
   margin-bottom: 39px;
+  &__title{
+    font-size:18px;
+  }
   &__list {
     padding-top: 23px;
     color: @p-color;
@@ -46,6 +46,8 @@
 
 @media @tablet-widths {
   .contacts{
+    padding-bottom: 18px;
+    padding-top: 100px;
     width: 100%;
     &__wrapper{
       width: 668px;
@@ -61,11 +63,17 @@
       width: 230px;
     }
     &__write-us{
-      width:230px;
-      margin: 55px auto;
+      width:228px;
+      margin: 0 auto;
+      margin-top: 51px;
+    }
+    &__field{
+      padding-right: 20px;
     }
     &__list{
-      margin-top: 30px;
+      font-size: 17px;
+      line-height: 30px;
+      margin-top: 49px;
       display: block;
       padding: 0;
 
@@ -82,16 +90,17 @@
   }
   .contacts__title::before{
     content: "";
-    right: 50px;
-    bottom: 0;
+    right: 0;
+    bottom: -17px;
     width: 50px;
-    height: 65px;
+    height: 81px;
     background: url("../img/icon-flag.svg") no-repeat;
     position: absolute;
   }
   .map{
     width: 100%;
-    padding-top:60px;
+    padding: 0;
+    padding-top:34px;
   }
 }
 

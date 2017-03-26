@@ -73,10 +73,15 @@
 
 @media @tablet-widths {
   .reviews{
-    margin: 0 auto;
-    width: 668px;
-    padding: 79px 0px 0px 0px;
-    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    background: url("../img/review@1x.jpg") no-repeat ;
+    &-wrapper{
+      margin: 0 auto;
+      width: 668px;
+      padding: 76px 0px 0px 0px;
+      position: relative;
+    }
 
     &__title{
       font-size: 43px;
@@ -85,12 +90,17 @@
     }
     &__write-reviws{
       position: absolute;
-      width: 176px;
+      width: 171px;
       top: 79px;
       right: 0;
     }
-    &__item p{
-      font-size: 17px;
+    &__item{
+      padding-bottom: 55px;
+      margin: 0;
+      & p{
+        font-size: 17px;
+        margin-bottom: 45px;
+      }
     }
     &__name-author{
       font-size: 17px;
@@ -103,8 +113,8 @@
   }
   .control{
     position: absolute;
-    bottom: -30px;
-    right: 0;
+    bottom: 13px;
+    right: 3px;
   }
 }
 
