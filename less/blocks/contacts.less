@@ -47,7 +47,7 @@
 @media @tablet-widths {
   .contacts{
     padding-bottom: 18px;
-    padding-top: 100px;
+    padding-top: 93px;
     width: 100%;
     &__wrapper{
       width: 668px;
@@ -109,7 +109,8 @@
 @media @desktop-widths {
   .contacts{
     width: 875px;
-    margin: 80px auto;
+    margin: 69px auto;
+    margin-bottom: 83px;
     padding-left: 175px;
     &__wrapper{
       float: left;
@@ -121,30 +122,41 @@
     }
     &__list{
       width: 350px;
+      margin-top: 42px;
       & tbody{
         display: flex;
         flex-direction: column;
       }
       & tr{
-        padding-top: 30px;
+        padding-top: 6px;
         width: 100%;
       }
     }
-
-
   }
+
   .map{
     float: right;
     padding: 0;
     width: 60%;
   }
-  .contacts__title::before{
-    left: -100px;
-    top: 0;
+  .contacts__title{
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 69px;
   }
-  .contacts__write-us{
-    float: left;
-    width: 20%;
+  .contacts__title::before{
+    left: -112px;
+    top: 62px;
   }
 
+  .contacts__value--border{
+    border-bottom: 1px solid @border-color;
+    width: 208px;
+  }
+
+  .contacts__write-us{
+    float: left;
+    width: 26%;
+    margin-top: 103px;
+  }
 }

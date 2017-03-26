@@ -127,9 +127,12 @@
 
     &__user-menu {
       order: 2;
-      width: 45%;
-      text-align: right;
+      width: 48%;
+      text-align: left;
     }
+  }
+  .menu-text-none{
+    display: none;
   }
 
   .logo {
@@ -171,18 +174,19 @@
       display: inline-flex;
       padding: 0;
       margin: 0;
-      padding-top: 20px;
     }
 
     &__item {
       padding: 0;
       border: none;
+      padding-top: 28px;
     }
   }
 
   .secondary-menu__item--search{
-    padding-right: 20px;
+    padding-right: 5px;
     border-right: 1px solid @border-color;
+    height: 60px;
   }
   .page-header__text-delivery {
     font-size: 15px;
@@ -191,6 +195,15 @@
     display: block;
     bottom: 0;
   }
+}
+.icon-search{
+  padding-top: 6px;
+  padding-left: 5px;
+}
+.icon-cart{
+  padding-top: 2px;
+  padding-left: 31px;
+  padding-right: 26px;
 }
 
 //desktop
@@ -225,20 +238,24 @@
     &__list {
       width: 100%;
       display: block;
-      font-size: 15px;
-      line-height: 24px;
+
     }
 
     &__item {
       width: 43%;
       display: inline-block;
-      padding: 0 25px 0 0;
+      padding: 4px 25px 0 0;
       margin: 25px 0;
       border: none;
 
       &:nth-child(3),
       &:nth-child(4) {
         display: inline-block;
+      }
+      &:nth-child(1) a,
+      &:nth-child(2) a{
+        font-size:17px;
+        line-height: 24px;
       }
     }
   }
@@ -251,21 +268,28 @@
       display: inline-flex;
       padding: 0;
       margin: 0;
-      padding-top: 20px;
     }
 
     &__item {
       padding: 0;
       border: none;
+      padding-top: 25px;
     }
   }
 
+  .icon-search{
+    padding-left: 19px;
+    padding-right: 11px;
+  }
   .secondary-menu__item--search{
+    padding-left: 13px;
     padding-right: 20px;
     border-right: 1px solid @border-color;
+    border-left: 1px solid @border-color;
+    height: 63px;
   }
-  .header__text-delivery {
+  .page-header__text-delivery {
     display: block;
-    bottom: 0;
+    bottom: 26px;
   }
 }
