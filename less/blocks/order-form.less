@@ -43,7 +43,6 @@
     }
   }
   .order-form{
-    position: relative;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -58,12 +57,15 @@
     color: @p-color;
   }
   .button-order-form{
-    width: 30%;
+    width: 34%;
+
   }
   .order-form__must-field{
+    font-size: 17px;
+    line-height: 30px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -7px;
+    right: 37px;
     width: 41%;
   }
 }
@@ -71,11 +73,31 @@
 //desktop
 
 @media @desktop-widths {
-  .order-form__must-field{
-    width: 36%;
+  .order-form{
+    margin-bottom: 32px;
+    &-header{
+      padding-bottom: 20px;
+      margin-bottom: 73px;
+      &__title h1{
+        font-size:53px;
+        line-height: 57px;
+      }
+    }
+    &__must-field{
+      color:@p-color;
+      width: 42%;
+      bottom: -4px;
+
+    }
+    &__description{
+      width: 700px;
+      line-height: 30px;
+    }
   }
-  .order-form__description{
-    width: 700px;
-    line-height: 30px;
+  .button-order-form{
+    position: absolute;
+    bottom: 17px;
+    left: 175px;
+    width: 22%;
   }
 }

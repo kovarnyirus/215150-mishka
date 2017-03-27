@@ -1,4 +1,5 @@
 .additionally{
+  position: relative;
   width: 260px;
   margin: 0 auto;
   padding-bottom: 25px;
@@ -30,24 +31,29 @@
 
 @media @tablet-widths {
   .additionally{
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 668px;
-    margin: 35px auto;
+    margin-top: 50px;
+    padding-bottom: 10px;
     &__header{
       line-height: 16px;
       font-weight: bold;
       width: 25%;
       padding: 0;
+      padding-top: 15px;
     }
     &__textarea{
       width: 71%;
       & textarea{
+        font-size:19px;
+        line-height: 18px;
         color: @form-text-color;
-        padding: 10px;
+        padding:15px 11px;
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 53px;
       }
     }
   }
@@ -57,8 +63,12 @@
 
 @media @desktop-widths {
   .additionally{
-    flex-wrap: wrap;
     width: 1050px;
+    &__header{
+      width: 11%;
+      padding-left: 61px;
+      margin: 0;
+    }
     &__textarea{
       width: 64%;
       margin-bottom: 55px;

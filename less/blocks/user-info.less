@@ -79,9 +79,10 @@
 
 @media @tablet-widths {
   .user-info{
+    margin: 0 auto;
     width: 668px;
     padding: 0;
-    margin: 40px auto;
+    margin-top: 65px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -100,6 +101,7 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      margin-bottom: 13px;
     }
     &-item {
       border: none;
@@ -108,15 +110,6 @@
       flex-wrap: wrap;
       font-size: 19px;
       line-height: 18px;
-      & lable{
-        font-weight: bold;
-        margin-right: 20px;
-      }
-      & input{
-        padding-bottom: 5px;
-        flex-grow: 1;
-        border-bottom: 2px solid #000;
-      }
     }
     &__title::after{
       display: none;
@@ -126,6 +119,20 @@
       padding: 30px 0;
       background-color: @bg-footer
     }
+  }
+  .user-info__input-title{
+    font-weight: bold;
+    font-size:19px;
+    line-height: 18px;
+    margin-right: 25px;
+  }
+  .user-info__input-value{
+    padding-left: 18px;
+    font-size: 19px;
+    line-height: 18px;
+    flex-grow: 1;
+    border-bottom: 2px solid #000;
+    padding-bottom: 16px;
   }
   .user-phone__icon-phone{
     width: 75%;
@@ -153,6 +160,11 @@
 @media @desktop-widths {
   .user-info{
     width: 1050px;
+    &__header{
+      width: 16%;
+      text-align: center;
+      padding-right: 10px;
+    }
     &__list{
       width: 700px;
     }
