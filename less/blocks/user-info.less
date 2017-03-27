@@ -1,6 +1,7 @@
-.user-info{
+.user-info {
   width: 260px;
   margin: 0 auto;
+
   &__header {
     padding: 0;
     font-size: 17px;
@@ -22,7 +23,7 @@
   top: 9px;
 }
 
-.user-info__list{
+.user-info__list {
   margin-bottom: 30px;
 }
 
@@ -32,7 +33,7 @@
 }
 
 .user-info__input-title {
-  font-size:17px;
+  font-size: 17px;
   line-height: 18px;
   display: block;
   padding-bottom: 15px;
@@ -47,7 +48,7 @@
   color: @form-text-color;
 }
 
-.user-info__header--padding{
+.user-info__header--padding {
   padding-bottom: 24px;
 }
 
@@ -74,11 +75,9 @@
   background: url("../img/icon-mail.svg") no-repeat;
   right: 30px;
 }
-
 //@tablet
-
 @media @tablet-widths {
-  .user-info{
+  .user-info {
     margin: 0 auto;
     width: 668px;
     padding: 0;
@@ -86,23 +85,27 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    &__wrapper{
+
+    &__wrapper {
       width: 668px;
       margin: 0 auto;
     }
-    &__header{
+
+    &__header {
       line-height: 16px;
       font-weight: bold;
       width: 25%;
       padding: 0;
     }
-    &__list{
+
+    &__list {
       width: 75%;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       margin-bottom: 13px;
     }
+
     &-item {
       border: none;
       display: flex;
@@ -111,22 +114,26 @@
       font-size: 19px;
       line-height: 18px;
     }
-    &__title::after{
+
+    &__title::after {
       display: none;
     }
-    &--color{
+
+    &--color {
       width: 100%;
       padding: 30px 0;
       background-color: @bg-footer
     }
   }
-  .user-info__input-title{
+
+  .user-info__input-title {
     font-weight: bold;
-    font-size:19px;
+    font-size: 19px;
     line-height: 18px;
     margin-right: 25px;
   }
-  .user-info__input-value{
+
+  .user-info__input-value {
     padding-left: 18px;
     font-size: 19px;
     line-height: 18px;
@@ -134,54 +141,60 @@
     border-bottom: 2px solid #000;
     padding-bottom: 16px;
   }
-  .user-phone__icon-phone{
+
+  .user-phone__icon-phone {
     width: 75%;
     border-bottom: 2px solid #000;
-    & input{
+
+    & input {
       padding-left: 25px;
       background-color: @bg-footer;
       border: none;
     }
   }
-  .user-email__icon-email{
+
+  .user-email__icon-email {
     width: 75%;
     border-bottom: 2px solid #000;
-    & input{
+
+    & input {
       padding-left: 25px;
       background-color: @bg-footer;
       border: none;
     }
   }
 }
-
-
 //desktop
-
 @media @desktop-widths {
-  .user-info{
+  .user-info {
     width: 1050px;
-    &__header{
+
+    &__header {
       width: 16%;
       text-align: center;
       padding-right: 10px;
     }
-    &__list{
+
+    &__list {
       width: 700px;
     }
-    &--color{
+
+    &--color {
       width: 100%;
       padding: 30px 0;
       background-color: @bg-footer
     }
-    &__wrapper{
+
+    &__wrapper {
       width: 1050px;
     }
-    .user-phone__icon-phone{
+
+    .user-phone__icon-phone {
       width: 700px;
     }
-    .user-email__icon-email{
+
+    .user-email__icon-email {
       width: 700px;
     }
   }
-
 }

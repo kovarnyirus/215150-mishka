@@ -1,7 +1,8 @@
-.filter-color{
+.filter-color {
   width: 260px;
   margin: 0 auto;
 }
+
 .filter-color__title {
   color: @mint-color;
 }
@@ -10,11 +11,11 @@
   .green-line();
 }
 
-.filter-type-checkbox{
+.filter-type-checkbox {
   display: none;
 }
 
-.filter-color__list{
+.filter-color__list {
   padding-top: 2px;
 }
 
@@ -24,7 +25,8 @@
   margin-top: 23px;
   position: relative;
   margin-bottom: 42px;
-  & label{
+
+  & label {
     font-size: 17px;
     line-height: 18px;
     font-weight: bold;
@@ -32,35 +34,34 @@
   }
 }
 
-.filter-color__item input[type="checkbox"] + label::before{
+.filter-color__item input[type="checkbox"] + label::before {
   position: absolute;
   content: "";
-  left: 0px;
+  left: 0;
   top: -10px;
   width: 38px;
   height: 35px;
   border: 2px solid @p-color;
 }
 
-.filter-color__item input[type="checkbox"]:checked + label::after{
+.filter-color__item input[type="checkbox"]:checked + label::after {
   position: absolute;
   content: "";
   left: 5px;
   top: -4px;
   width: 33px;
   height: 23px;
-  background: url("../img/icon-tick.svg")
+  background: url("../img/icon-tick.svg");
 }
-
 //tablet
-
 @media @tablet-widths {
-  .filter-color{
+  .filter-color {
     width: 100%;
     padding: 0;
     background-color: @bg-footer;
     padding-bottom: 35px;
-    &__wrapper{
+
+    &__wrapper {
       padding-top: 39px;
       width: 668px;
       margin: 0 auto;
@@ -68,89 +69,98 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
-    &__header{
+
+    &__header {
       width: 25%;
     }
 
-    &__list{
+    &__list {
       width: 75%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
     }
-    &__item{
+
+    &__item {
       box-sizing: border-box;
       padding-left: 80px;
       font-size: 19px;
       line-height: 18px;
-      margin-bottom:35px;
+      margin-bottom: 35px;
       width: 50%;
-      & label{
+
+      & label {
         font-size: 19px;
         line-height: 18px;
       }
     }
   }
-  .filter-color__title::after{
+
+  .filter-color__title::after {
     display: none;
   }
 
-  .filter-color__item:nth-child(2n){
+  .filter-color__item:nth-child(2n) {
     padding-left: 91px;
 
-    & input[type="checkbox"] + label::before{
+    & input[type="checkbox"] + label::before {
       width: 50px;
       height: 48px;
       top: -14px;
-      left: 11px;;
+      left: 11px;
     }
-    & input[type="checkbox"]:checked + label::after{
+
+    & input[type="checkbox"]:checked + label::after {
       left: 22px;
       top: 1px;
     }
   }
 
-  .filter-color__item input[type="checkbox"] + label::before{
+  .filter-color__item input[type="checkbox"] + label::before {
     width: 50px;
     height: 48px;
     top: -14px;
   }
-  .filter-color__item input[type="checkbox"]:checked + label::after{
+
+  .filter-color__item input[type="checkbox"]:checked + label::after {
     left: 11px;
     top: 2px;
   }
 }
-
 //desktop
-
 @media @desktop-widths {
-  .filter-color{
-    &__wrapper{
-    width: 1050px;
-  }
-    &__header{
+  .filter-color {
+    &__wrapper {
+      width: 1050px;
+    }
+
+    &__header {
       width: 17%;
     }
-    &__item{
+
+    &__item {
       width: 33%;
     }
   }
-  .filter-color__item:nth-child(2n){
+
+  .filter-color__item:nth-child(2n) {
     padding-left: 80px;
 
-    & input[type="checkbox"] + label::before{
-      left: 0px;
+    & input[type="checkbox"] + label::before {
+      left: 0;
     }
 
-    & input[type="checkbox"]:checked + label::after{
+    & input[type="checkbox"]:checked + label::after {
       left: 8px;
       top: 1px;
     }
   }
-  .filter-color__item input[type="checkbox"] + label::before{
-    left: 0px;
+
+  .filter-color__item input[type="checkbox"] + label::before {
+    left: 0;
   }
-  .filter-color__item input[type="checkbox"]:checked + label::after{
+
+  .filter-color__item input[type="checkbox"]:checked + label::after {
     left: 8px;
     top: 1px;
   }

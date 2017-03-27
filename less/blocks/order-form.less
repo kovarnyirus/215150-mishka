@@ -1,9 +1,10 @@
-.order-form-header{
+.order-form-header {
   background-color: @bg-footer;
   margin-bottom: 22px;
-  &__title{
+
+  &__title {
     text-align: center;
-    padding: 70px 0 76px 0;
+    padding: 70px 0 76px;
   }
 }
 
@@ -13,13 +14,13 @@
   font-size: 13px;
   line-height: 24px;
 }
+
 .button-order-form {
   .btn();
   background: #fff;
   font-size: 17px;
   line-height: 16px;
   padding: 16px 0;
-
 }
 
 .order-form__must-field {
@@ -28,27 +29,27 @@
   color: @form-text-color;
   margin-bottom: 33px;
 }
-
-
 //tablet
-
 @media @tablet-widths {
   .order-form-header__title {
     padding-top: 92px;
     padding-bottom: 83px;
     background-color: @bg-footer;
-    & h1{
+
+    & h1 {
       font-size: 43px;
       line-height: 50px;
     }
   }
-  .order-form{
+
+  .order-form {
     padding: 0;
     margin: 0;
     width: 100%;
     margin-bottom: 40px;
   }
-  .order-form__description{
+
+  .order-form__description {
     width: 668px;
     margin: 0 auto;
     padding: 50px 0;
@@ -56,45 +57,48 @@
     line-height: 30px;
     color: @p-color;
   }
-  .button-order-form{
-    width: 34%;
 
+  .button-order-form {
+    width: 34%;
   }
-  .order-form__must-field{
+
+  .order-form__must-field {
     font-size: 17px;
     line-height: 30px;
     position: absolute;
-    bottom: -7px;
-    right: 37px;
-    width: 41%;
+    bottom: -8px;
+    right: -5px;
+    width: 46%;
   }
 }
-
 //desktop
-
 @media @desktop-widths {
-  .order-form{
+  .order-form {
     margin-bottom: 32px;
-    &-header{
+
+    &-header {
       padding-bottom: 20px;
       margin-bottom: 73px;
-      &__title h1{
-        font-size:53px;
+
+      &__title h1 {
+        font-size: 53px;
         line-height: 57px;
       }
     }
-    &__must-field{
-      color:@p-color;
+
+    &__must-field {
+      color: @p-color;
       width: 42%;
       bottom: -4px;
-
     }
-    &__description{
+
+    &__description {
       width: 700px;
       line-height: 30px;
     }
   }
-  .button-order-form{
+
+  .button-order-form {
     position: absolute;
     bottom: 17px;
     left: 175px;

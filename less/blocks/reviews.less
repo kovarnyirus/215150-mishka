@@ -56,7 +56,6 @@
   margin-left: -5px;
 }
 
-
 .reviews__write-reviws {
   text-transform: uppercase;
   display: block;
@@ -68,80 +67,88 @@
   line-height: 20px;
   font-weight: bold;
 }
-
 //планшет
-
 @media @tablet-widths {
-  .reviews{
+  .reviews {
     width: 100%;
     margin-top: 50px;
-    background: url("../img/review@1x.jpg") no-repeat ;
-    &-wrapper{
+    background: url("../img/review@1x.jpg") no-repeat;
+
+    &-wrapper {
       margin: 0 auto;
       width: 668px;
-      padding: 76px 0px 0px 0px;
+      padding: 76px 0 0;
       position: relative;
     }
 
-    &__title{
+    &__title {
       font-size: 43px;
       line-height: 50px;
       margin-bottom: 50px;
     }
-    &__write-reviws{
+
+    &__write-reviws {
       position: absolute;
       width: 171px;
       top: 79px;
       right: 0;
     }
-    &__item{
+
+    &__item {
       padding-bottom: 55px;
       margin: 0;
-      & p{
+
+      & p {
         font-size: 17px;
         margin-bottom: 45px;
       }
     }
-    &__name-author{
+
+    &__name-author {
       margin: 4px 0;
       font-size: 17px;
     }
-    &__email-autor{
-      font-size:17px;
+
+    &__email-autor {
+      font-size: 17px;
       line-height: 30px;
     }
   }
-  .reviews__prev,
-  .reviews__next{
+
+  .reviews__next,
+  .reviews__prev {
     border: none;
     width: 85px;
   }
-  .control{
+
+  .control {
     position: absolute;
     bottom: 20px;
     right: 3px;
   }
 }
-
 @media @desktop-widths {
-  .reviews{
-    margin: 0 auto;
-    margin-top: 55px;
+  .reviews {
+    margin: 55px auto 0;
     width: 1050px;
-    &-wrapper{
-      width:875px;
+
+    &-wrapper {
+      width: 875px;
       padding-left: 175px;
       padding-top: 70px;
     }
-    &__title{
+
+    &__title {
       font-size: 53px;
       line-height: 57px;
     }
-    &__item{
+
+    &__item {
       padding-bottom: 95px;
-      & p{
-      width:785px;
-      margin-bottom: 27px;
+
+      & p {
+        width: 785px;
+        margin-bottom: 27px;
       }
     }
   }
@@ -151,8 +158,8 @@
     right: -2px;
   }
 
-  .reviews__prev,
-  .reviews__next{
+  .reviews__next,
+  .reviews__prev {
     border: none;
     width: 90px;
   }

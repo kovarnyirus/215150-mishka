@@ -12,7 +12,7 @@
   padding-top: 3px;
   text-transform: uppercase;
   font-size: 17px;
-  line-height:20px;
+  line-height: 20px;
   font-weight: bold;
   margin: 0;
   color: @mint-color;
@@ -21,28 +21,32 @@
 .feature-product {
   color: @p-color;
   margin-bottom: 40px;
-  &__description{
+
+  &__description {
     margin: 0;
     padding-top: 24px;
     padding-bottom: 5px;
     font-size: 15px;
     line-height: 24px;
   }
-  &__list{
+
+  &__list {
     margin-top: 9px;
     margin-bottom: 25px;
     font-size: 15px;
     line-height: 20px;
     width: 260px;
-    & tr{
+
+    & tr {
       display: block;
       border-bottom: 1px solid @border-color;
-
     }
-    & td:first-child{
+
+    & td:first-child {
       width: 91px;
     }
-    & td{
+
+    & td {
       padding: 8px 0;
     }
   }
@@ -63,60 +67,62 @@
   width: 256px;
 }
 
-.featured__buy:hover{
-  background-color:@p-color;
-  color:#ffffff;
+.featured__buy:hover {
+  background-color: @p-color;
+  color: #ffffff;
 }
 
-.featured__buy:active{
-  background-color:@p-color;
-  color:#858585;
+.featured__buy:active {
+  background-color: @p-color;
+  color: #858585;
 }
-
 //планшет
-
-
 @media @tablet-widths {
   // .reviews{
   //   background: url("../img/review@1x.jpg") no-repeat ;
   // }
-  .featured{
+  .featured {
     width: 668px;
     margin: 0 auto;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    &__title{
-      font-size:43px;
+
+    &__title {
+      font-size: 43px;
       line-height: 50px;
       font-weight: bold;
       width: 85%;
     }
-    &__product-week{
+
+    &__product-week {
       width: 11%;
       text-align: center;
       text-transform: uppercase;
       margin-top: 5px;
     }
-    &__image img{
+
+    &__image img {
       position: absolute;
       right: 0;
       top: 7px;
       width: 50%;
-      }
-    &__price{
+    }
+
+    &__price {
       font-size: 20px;
       width: 44%;
       margin-bottom: 35px;
       margin-top: 52px;
     }
-    &__buy{
+
+    &__buy {
       font-size: 17px;
       width: 43%;
     }
   }
 
-  .feature-product{
+  .feature-product {
     margin: 0;
     width: 100%;
     position: relative;
@@ -130,67 +136,74 @@
       margin-bottom: 32px;
       font-size: 17px;
       line-height: 30px;
-      }
-    &__list{
+    }
+
+    &__list {
       padding: 0;
       margin: 0;
       width: 44%;
-      & td{
+
+      & td {
         padding-top: 9px;
         padding-bottom: 7px;
       }
     }
   }
 }
-
 //desktop
-
 @media @desktop-widths {
-  .featured{
+  .featured {
     width: 1050px;
     position: relative;
     padding-top: 79px;
     padding-bottom: 48px;
-    &__product-week{
+
+    &__product-week {
       order: -1;
       padding-left: 24px;
       padding-right: 31px;
     }
-    &__title{
+
+    &__title {
       font-size: 53px;
       line-height: 57px;
       text-transform: none;
       width: 80%;
       padding-bottom: 26px;
     }
-    &__image img{
+
+    &__image img {
       z-index: -1;
       top: -140px;
       right: 0;
       top: 26px;
     }
-    &__price{
+
+    &__price {
       padding-top: 53px;
-      margin-left:175px;
+      margin-left: 175px;
       width: 301px;
     }
-    &__buy{
-      margin-left:175px;
+
+    &__buy {
+      margin-left: 175px;
       width: 288px;
     }
   }
-  .feature-product{
+
+  .feature-product {
     position: static;
     padding-bottom: 60px;
-    &__description{
-      margin-left:175px;
+
+    &__description {
+      margin-left: 175px;
       width: 282px;
       margin-bottom: 46px;
     }
-    &__list{
-      margin-left:175px;
+
+    &__list {
+      margin-left: 175px;
       width: 280px;
     }
-
   }
 }

@@ -1,7 +1,6 @@
-.filter-type{
+.filter-type {
   width: 260px;
-  margin: 0 auto;
-  margin-bottom: 19px;
+  margin: 0 auto 19px;
 
   &__header {
     font-size: 17px;
@@ -12,40 +11,43 @@
     text-transform: uppercase;
     padding-bottom: 12px;
   }
-  &__title{
+
+  &__title {
     color: @mint-color;
   }
 }
+
 .filter-type__title::after {
   .green-line();
-
 }
 
 .filter-type-radio {
   display: none;
 }
-.filter-type__item{
+
+.filter-type__item {
   width: 190px;
   padding-left: 64px;
   margin-top: 23px;
   position: relative;
 
-  & label{
+  & label {
     font-size: 17px;
     line-height: 18px;
     font-weight: bold;
     cursor: pointer;
   }
 }
-.filter-type__text{
-  color:#000;
+
+.filter-type__text {
+  color: #000;
   font-weight: bold;
 }
 
-.filter-type__item input[type="radio"] + label::before{
+.filter-type__item input[type="radio"] + label::before {
   position: absolute;
   content: "";
-  left: 0px;
+  left: 0;
   top: -10px;
   width: 38px;
   height: 38px;
@@ -53,7 +55,7 @@
   border-radius: 50%;
 }
 
-.filter-type__item input[type="radio"]:checked + label::after{
+.filter-type__item input[type="radio"]:checked + label::after {
   position: absolute;
   content: "";
   left: 13px;
@@ -63,13 +65,9 @@
   border-radius: 50%;
   background-color: #62d1ba;
 }
-
-
-
 //tablet
-
 @media @tablet-widths {
-  .filter-type{
+  .filter-type {
     width: 668px;
     padding: 0;
     margin-top: 22px;
@@ -77,68 +75,74 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    &__header{
+
+    &__header {
       padding: 0;
       line-height: 16px;
       font-weight: bold;
       width: 25%;
     }
-    &__item{
+
+    &__item {
       width: 288px;
       margin: 0;
       font-size: 19px;
       line-height: 18px;
       margin-bottom: 57px;
-      padding-left: 81px
-
+      padding-left: 81px;
     }
-    &__title::after{
+
+    &__title::after {
       display: none;
     }
-    & label{
+
+    & label {
       font-size: 19px;
       line-height: 18px;
     }
   }
-  .filter-type__item input[type="radio"] + label::before{
+
+  .filter-type__item input[type="radio"] + label::before {
     top: -14px;
     width: 47px;
     height: 47px;
   }
-  .filter-type__item input[type="radio"]:checked + label::after{
+
+  .filter-type__item input[type="radio"]:checked + label::after {
     left: 15px;
     top: 1px;
     width: 20px;
     height: 20px;
   }
 }
-
 //desktop
-
 @media @desktop-widths {
-  .filter-type{
+  .filter-type {
     width: 1050px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 14px;
-    &__header{
+    margin: 20px auto 14px;
+
+    &__header {
       width: 16%;
-    text-align: center;
-    padding-right: 10px;
-    padding-top: 3px;
+      text-align: center;
+      padding-right: 10px;
+      padding-top: 3px;
     }
-    &__item{
+
+    &__item {
       padding-left: 77px;
     }
   }
-  .filter-type__header--padding-top{
-    padding-top: 26px;
+
+  .filter-type__header--padding-top {
+    padding-top: 60px;
   }
-  .filter-type__item input[type="radio"] + label::before{
+
+  .filter-type__item input[type="radio"] + label::before {
     top: -12px;
     left: -3px;
   }
-  .filter-type__item input[type="radio"]:checked + label::after{
+
+  .filter-type__item input[type="radio"]:checked + label::after {
     left: 12px;
     top: 3px;
   }

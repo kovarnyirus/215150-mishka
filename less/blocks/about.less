@@ -1,5 +1,5 @@
 .about {
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 20px 0;
   width: 260px;
 }
@@ -7,15 +7,17 @@
 .about__title {
   margin-top: 9px;
 }
-.about__list{
+
+.about__list {
   padding-top: 10px;
 }
+
 .about__item {
   position: relative;
   min-height: 61px;
   padding-top: 62px;
 
-    & p {
+  & p {
     font-size: 17px;
     font-weight: bold;
     line-height: 20px;
@@ -24,8 +26,9 @@
     padding-right: 10px;
   }
 }
-.icon-feature{
-  &-flower{
+
+.icon-feature {
+  &-flower {
     position: absolute;
     top: 21px;
     left: 8px;
@@ -33,7 +36,8 @@
     height: 37px;
     background: url("../img/icon-feature-1.svg") no-repeat;
   }
-  &-rectangle{
+
+  &-rectangle {
     position: absolute;
     top: 22px;
     left: 0;
@@ -41,7 +45,8 @@
     height: 30px;
     background: url("../img/icon-feature-3.svg") no-repeat;
   }
-  &-heart{
+
+  &-heart {
     position: absolute;
     top: 27px;
     left: 8px;
@@ -49,7 +54,8 @@
     height: 29px;
     background: url("../img/icon-feature-5.svg") no-repeat;
   }
-  &-circle{
+
+  &-circle {
     position: absolute;
     top: 25px;
     left: 4px;
@@ -57,7 +63,8 @@
     height: 36px;
     background: url("../img/icon-feature-2.svg") no-repeat;
   }
-  &-missile{
+
+  &-missile {
     position: absolute;
     top: 26px;
     left: -5px;
@@ -65,7 +72,8 @@
     height: 29px;
     background: url("../img/icon-feature-4.svg") no-repeat;
   }
-  &-gift{
+
+  &-gift {
     position: absolute;
     top: 24px;
     left: 3px;
@@ -73,10 +81,7 @@
     height: 36px;
     background: url("../img/icon-feature-6.svg") no-repeat;
   }
-
-
 }
-
 @media @tablet-widths {
   .about {
     margin: 0 auto;
@@ -84,40 +89,48 @@
     padding: 0;
     margin-top: 48px;
 
-    &__title{
-      font-size:43px;
+    &__title {
+      font-size: 43px;
       line-height: 50px;
     }
 
-    &__list{
-    padding-top: 28px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    &__list {
+      padding-top: 28px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
-    &__item{
+
+    &__item {
       width: 46%;
       margin-right: 26px;
       margin-bottom: 31px;
-      &:nth-child(1){
+
+      &:nth-child(1) {
         order: 1;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         order: 3;
       }
-      &:nth-child(3){
+
+      &:nth-child(3) {
         order: 5;
       }
-      &:nth-child(4){
+
+      &:nth-child(4) {
         order: 2;
       }
-      &:nth-child(5){
+
+      &:nth-child(5) {
         order: 4;
       }
-      &:nth-child(6){
+
+      &:nth-child(6) {
         order: 6;
       }
-      & p{
+
+      & p {
         font-size: 20px;
         line-height: 22px;
         font-weight: bold;
@@ -125,13 +138,13 @@
     }
   }
 }
-
 @media @desktop-widths {
   .about {
     width: 700px;
-    &__title{
+
+    &__title {
       font-size: 53px;
-      line-height: 57px
+      line-height: 57px;
     }
   }
 }

@@ -1,4 +1,4 @@
-.user-contacts{
+.user-contacts {
   &__header {
     padding: 0;
     font-size: 17px;
@@ -8,7 +8,8 @@
     text-transform: uppercase;
     padding-bottom: 23px;
   }
-  &__wrapper{
+
+  &__wrapper {
     width: 260px;
     margin: 0 auto;
   }
@@ -24,7 +25,7 @@
   top: 9px;
 }
 
-.user-contacts__list{
+.user-contacts__list {
   margin-bottom: 30px;
 }
 
@@ -34,7 +35,7 @@
 }
 
 .user-contacts__input-title {
-  font-size:17px;
+  font-size: 17px;
   line-height: 18px;
   display: block;
   padding-bottom: 15px;
@@ -73,78 +74,87 @@
   top: -2px;
   right: -5px;
 }
-
 //@tablet
-
 @media @tablet-widths {
-  .user-contacts{
+  .user-contacts {
     background-color: @bg-footer;
     width: 100%;
     padding-top: 67px;
     padding-bottom: 10px;
-    &-item{
+
+    &-item {
       border: none;
     }
-    &__header{
+
+    &__header {
       padding: 0;
       width: 25%;
     }
-    &__wrapper{
+
+    &__wrapper {
       width: 668px;
       margin: 0 auto;
     }
   }
-  .user-contacts__title::after{
+
+  .user-contacts__title::after {
     display: none;
   }
-  .user-contacts-item{
+
+  .user-contacts-item {
     display: flex;
     padding-bottom: 10px;
   }
-  .user-contacts__input-value{
+
+  .user-contacts__input-value {
     margin-bottom: 14px;
   }
+
   .user-phone__icon-phone::before {
     top: -5px;
     right: 21px;
   }
+
   .user-email__icon-email::after {
     top: -5px;
     right: 14px;
   }
 }
-
-
 //desktop
-
 @media @desktop-widths {
-  .user-contacts{
+  .user-contacts {
     width: 100%;
-    &__wrapper{
+
+    &__wrapper {
       width: 1050px;
       margin: 0 auto;
     }
-    &__header{
+
+    &__header {
       width: 11%;
       padding-left: 60px;
     }
   }
+
   .user-email__icon-email {
     width: 66%;
   }
-  .user-phone__icon-phone{
+
+  .user-phone__icon-phone {
     width: 66%;
   }
+
   .user-phone__icon-phone::before {
     right: -2px;
   }
+
   .user-email__icon-email::after {
     right: -9px;
   }
-  .additionally__textarea{
 
-  }
-  .additionally__textarea textarea{
+  .additionally__textarea {}
+
+  .additionally__textarea textarea {
     margin-bottom: 10px;
   }
 }

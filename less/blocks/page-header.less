@@ -58,6 +58,7 @@
 .secondary-menu__item a:active {
   color: #cacaca;
 }
+
 .page-header__user-menu {
   width: 100%;
 }
@@ -110,9 +111,7 @@
   padding: 20px 0 18px;
   margin: 0 auto;
 }
-
 //tablet
-
 @media @tablet-widths {
   .page-header {
     width: 100%;
@@ -131,7 +130,8 @@
       text-align: left;
     }
   }
-  .menu-text-none{
+
+  .menu-text-none {
     display: none;
   }
 
@@ -147,6 +147,7 @@
 
   .main-nav {
     order: 3;
+
     &-toggle {
       order: 2;
       display: none;
@@ -183,11 +184,12 @@
     }
   }
 
-  .secondary-menu__item--search{
+  .secondary-menu__item--search {
     padding-right: 5px;
     border-right: 1px solid @border-color;
     height: 60px;
   }
+
   .page-header__text-delivery {
     font-size: 15px;
     line-height: 24px;
@@ -196,19 +198,18 @@
     bottom: 0;
   }
 
-  .icon-search{
+  .icon-search {
     padding-top: 6px;
     padding-left: 5px;
   }
-  .icon-cart{
+
+  .icon-cart {
     padding-top: 2px;
     padding-left: 31px;
     padding-right: 26px;
   }
 }
-
 //desktop
-
 @media @desktop-widths {
   .page-header {
     &__wrapper {
@@ -232,6 +233,7 @@
   .main-nav {
     width: 42%;
     order: 1;
+
     &-toggle {
       display: none;
     }
@@ -239,7 +241,6 @@
     &__list {
       width: 100%;
       display: block;
-
     }
 
     &__item {
@@ -253,14 +254,16 @@
       &:nth-child(4) {
         display: inline-block;
       }
+
       &:nth-child(1) a,
-      &:nth-child(2) a{
-        font-size:17px;
+      &:nth-child(2) a {
+        font-size: 17px;
         line-height: 24px;
       }
     }
   }
-  .main-nav__item:last-child{
+
+  .main-nav__item:last-child {
     border: none;
   }
 
@@ -278,17 +281,19 @@
     }
   }
 
-  .icon-search{
+  .icon-search {
     padding-left: 19px;
     padding-right: 11px;
   }
-  .secondary-menu__item--search{
+
+  .secondary-menu__item--search {
     padding-left: 13px;
     padding-right: 20px;
     border-right: 1px solid @border-color;
     border-left: 1px solid @border-color;
     height: 63px;
   }
+
   .page-header__text-delivery {
     display: block;
     bottom: 26px;

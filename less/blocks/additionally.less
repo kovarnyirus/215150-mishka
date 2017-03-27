@@ -1,19 +1,20 @@
-.additionally{
+.additionally {
   position: relative;
   width: 260px;
   margin: 0 auto;
   padding-bottom: 25px;
 }
+
 .additionally__header {
-  padding: 0px 0;
-  font-weight:bold;
+  padding: 0;
+  font-weight: bold;
   position: relative;
   margin-bottom: 26px;
 }
 
 .additionally__textarea {
   color: @form-text-color;
-  font-size:17 px;
+  font-size: 17 px;
   line-height: 18px;
 
   & textarea {
@@ -21,16 +22,12 @@
     width: 212px;
     height: 108px;
     resize: none;
-    padding: 15px;
-    padding-right: 30px;
+    padding: 15px 30px 15px 15px;
   }
 }
-
-
 //@tablet
-
 @media @tablet-widths {
-  .additionally{
+  .additionally {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -38,38 +35,40 @@
     width: 668px;
     margin-top: 50px;
     padding-bottom: 10px;
-    &__header{
+
+    &__header {
       line-height: 16px;
       font-weight: bold;
       width: 25%;
-      padding: 0;
-      padding-top: 15px;
+      padding: 15px 0 0;
     }
-    &__textarea{
+
+    &__textarea {
       width: 71%;
-      & textarea{
-        font-size:19px;
+
+      & textarea {
+        font-size: 19px;
         line-height: 18px;
         color: @form-text-color;
-        padding:15px 11px;
+        padding: 15px 11px;
         width: 100%;
         margin-bottom: 53px;
       }
     }
   }
 }
-
 //desktop
-
 @media @desktop-widths {
-  .additionally{
+  .additionally {
     width: 1050px;
-    &__header{
+
+    &__header {
       width: 11%;
       padding-left: 61px;
       margin: 0;
     }
-    &__textarea{
+
+    &__textarea {
       width: 64%;
       margin-bottom: 55px;
     }
