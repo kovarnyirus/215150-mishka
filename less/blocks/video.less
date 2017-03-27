@@ -13,12 +13,12 @@
 
 .video-header__camera {
   margin-top: 6px;
-  width: 66px;
-  height: 60px;
+  width: 35px;
+  height: 35px;
   margin-right: 24px;
   display: block;
   float: left;
-  background: url("../img/icon-video.svg") 100% 0 no-repeat;
+  background: url("../img/icon-video.svg") 50% 50% no-repeat;
 }
 
 .video__comment {
@@ -47,23 +47,32 @@
 
 @media @tablet-widths {
   .video {
-    width: 668px;
+    width: 666px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 77px;
+    &__comment{
+      padding-top: 26px;
+    }
   }
   .video-player {
     order: -1;
-    height: 455px;
+    height: 451px;
     border-bottom: 1px solid @border-color;
     background-size: cover;
   }
   .video-header {
     margin-top: 30px;
     width: 100%;
-    padding: 0 40px;
+    padding: 0 41px;
+    &__camera{
+      margin-top: 4px;
+      margin-right: 31px;
+    }
     & h3{
+      margin-top: 8px;
       font-size:20px;
       line-height: 24 px;
       font-weight: bold;
@@ -72,11 +81,13 @@
   .video__comment{
     font-size: 15px;
     line-height: 30px;
-    color: @p-color
+    color: @p-color;
+    margin: 0 40px;
   }
   .video__make-order{
     width:100%;
-    margin:  40px 40px;
+    margin: 37px 40px 30px 40px;
+
   }
 }
 @media @desktop-widths {
@@ -91,21 +102,35 @@
     &-header{
       float: right;
       box-sizing: border-box;
-      width: 35%;
+      width: 32%;
+      padding-left: 46px;
+      &__camera{
+        margin-top: 10px;
+        float: none;
+      }
+      & h3{
+        padding-top: 10px;
+        width: 100px;
+      }
     }
     &__comment{
       margin: 0;
       box-sizing: border-box;
       float: right;
       width: 35%;
-      padding: 0 40px;
+      padding-left: 77px;
+      padding-right: 30px;
+      padding-top: 35px;
     }
     &__make-order{
-      margin-top: 60px;
-      width: 27%;
+      margin-top: 46px;
+      width: 22%;
       float: right;
       box-sizing: border-box;
       padding: 16px 45px;
+      margin-left: 50px;
+      margin-right: 56px;
+      padding: 16px 38px;
     }
   }
 }
