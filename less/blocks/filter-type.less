@@ -72,24 +72,44 @@
   .filter-type{
     width: 668px;
     padding: 0;
-    margin: 40px auto;
+    margin-top: 22px;
+    margin-bottom: 13px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     &__header{
+      padding: 0;
       line-height: 16px;
       font-weight: bold;
       width: 25%;
-      padding: 0;
     }
     &__item{
+      width: 288px;
+      margin: 0;
       font-size: 19px;
       line-height: 18px;
-      margin-bottom:30px;
+      margin-bottom: 57px;
+      padding-left: 81px
+
     }
     &__title::after{
       display: none;
     }
+    & label{
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+  .filter-type__item input[type="radio"] + label::before{
+    top: -14px;
+    width: 47px;
+    height: 47px;
+  }
+  .filter-type__item input[type="radio"]:checked + label::after{
+    left: 15px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
   }
 }
 
