@@ -20,7 +20,7 @@
   padding: 26px 160px 29px 29px;
 
   & p {
-    font-size:19px;
+    font-size: 19px;
     line-height: 24px;
     font-weight: bold;
     margin: 0;
@@ -28,19 +28,20 @@
   }
 }
 
-.page-preview__item:hover{
-  background-color:#59d5bc;
+.page-preview__item:hover {
+  background-color: #59d5bc;
 }
 
-.page-preview__item:active{
-  & p{
+.page-preview__item:active {
+  & p {
     color: #97e2d2;
   }
 }
+
 .page-preview__item--ico::before {
   content: "";
-  right: 50px;
-  bottom: 5px;
+  right: 27px;
+  bottom: 15px;
   width: 50px;
   height: 65px;
   background: url("../img/icon-interior.svg") no-repeat;
@@ -50,56 +51,86 @@
 .page-preview__item--color {
   background-color: #56c3b2;
 }
-.page-preview__item--color:hover{
-  background-color:#46c1ae;
+
+.page-preview__item--color:hover {
+  background-color: #46c1ae;
 }
 
-.page-preview__item--color:active{
-  color:#8dd5c9;
+.page-preview__item--color:active {
+  color: #8dd5c9;
 }
 
 .page-preview__item--color::before {
   content: "";
-  right: 50px;
-  bottom: 5px;
+  right: 22px;
+  bottom: 18px;
   width: 65px;
   height: 65px;
   background: url("../img/icon-toy.svg") no-repeat;
   position: absolute;
 }
-
 @media @tablet-widths {
   .page-preview {
     width: 668px;
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 46px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
-    &__title h1{
-      font-size:43px;
-      line-height:50px;
-    }
-
-    &__production{
+    &__production {
       margin: 0;
       width: 100%;
       display: flex;
       flex-direction: row;
     }
-    &__title{
+
+    &__title {
+      height: 430px;
       width: 100%;
+
+      & h1 {
+        font-size: 43px;
+        line-height: 50px;
+        padding-top: 77px;
+      }
     }
-    &__item{
+
+    &__item {
       margin: 0;
-      padding-right: 0;
+      padding-left: 36px;
+      padding-top: 28px;
+      padding-right: 140px;
       width: 50%;
+
+      & p {
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
+  }
+
+  .page-preview__item--ico::before {
+    bottom: 22px;
+  }
+
+  .page-preview__item--color::before {
+    bottom: 20px;
+    right: 28px;
   }
 }
 @media @desktop-widths {
-.page-preview {
-  width: 1050px;
+  .page-preview {
+    width: 1050px;
+
+    &__title h1 {
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__item {
+      padding-right: 305px;
+    }
   }
 }

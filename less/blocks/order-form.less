@@ -1,40 +1,63 @@
-.order-form {
-  .container();
-  width: 260px;
-  padding: 0 30px;
-  font-size: 17px;
-  line-height: 18px;
+.order-form-header {
+  background-color: @bg-footer;
+  margin-bottom: 22px;
+
+  &__title {
+    text-align: center;
+    padding: 70px 0 76px;
+  }
 }
 
 .order-form__description {
+  width: 260px;
+  margin: 0 auto;
   font-size: 13px;
   line-height: 24px;
-  margin: 0;
 }
+
 .button-order-form {
   .btn();
   background: #fff;
+  font-size: 17px;
+  line-height: 16px;
+  padding: 16px 0;
+}
+.button-order-form:hover {
+  background-color: @p-color;
+  color: #ffffff;
 }
 
-//tablet
+.button-order-form:active {
+  color: @color-text-hover;
+}
 
+.order-form__must-field {
+  font-size: 14px;
+  line-height: 16px;
+  color: @form-text-color;
+  margin-bottom: 33px;
+}
+//tablet
 @media @tablet-widths {
-  .order-form__title {
-    padding: 70px 0;
+  .order-form-header__title {
+    padding-top: 92px;
+    padding-bottom: 83px;
     background-color: @bg-footer;
-    & h1{
-      font-size: 53px;
-      line-height: 57px;
+
+    & h1 {
+      font-size: 43px;
+      line-height: 50px;
     }
   }
-  .order-form{
-    position: relative;
+
+  .order-form {
     padding: 0;
     margin: 0;
     width: 100%;
     margin-bottom: 40px;
   }
-  .order-form__description{
+
+  .order-form__description {
     width: 668px;
     margin: 0 auto;
     padding: 50px 0;
@@ -42,25 +65,51 @@
     line-height: 30px;
     color: @p-color;
   }
-  .button-order-form{
-    width: 30%;
+
+  .button-order-form {
+    width: 34%;
   }
-  .order-form__must-field{
+
+  .order-form__must-field {
+    font-size: 17px;
+    line-height: 30px;
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 41%;
+    bottom: -8px;
+    right: -5px;
+    width: 46%;
   }
 }
-
 //desktop
-
 @media @desktop-widths {
-  .order-form__must-field{
-    width: 36%;
+  .order-form {
+    margin-bottom: 32px;
+
+    &-header {
+      padding-bottom: 20px;
+      margin-bottom: 73px;
+
+      &__title h1 {
+        font-size: 53px;
+        line-height: 57px;
+      }
+    }
+
+    &__must-field {
+      color: @p-color;
+      width: 42%;
+      bottom: -4px;
+    }
+
+    &__description {
+      width: 700px;
+      line-height: 30px;
+    }
   }
-  .order-form__description{
-    width: 700px;
-    line-height: 30px;
+
+  .button-order-form {
+    position: absolute;
+    bottom: 17px;
+    left: 175px;
+    width: 22%;
   }
 }

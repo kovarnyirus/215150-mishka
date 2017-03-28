@@ -4,7 +4,7 @@
 }
 
 .featured__title {
-  margin-top: 28px;
+  padding-bottom: 28px;
   line-height: 30px;
 }
 
@@ -12,7 +12,7 @@
   padding-top: 3px;
   text-transform: uppercase;
   font-size: 17px;
-  line-height:20px;
+  line-height: 20px;
   font-weight: bold;
   margin: 0;
   color: @mint-color;
@@ -20,20 +20,34 @@
 
 .feature-product {
   color: @p-color;
-  &__description{
-    padding-top: 9px;
-    padding-bottom: 10px;
+  margin-bottom: 40px;
+
+  &__description {
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 5px;
     font-size: 15px;
     line-height: 24px;
   }
-  &__list{
+
+  &__list {
+    margin-top: 9px;
+    margin-bottom: 25px;
     font-size: 15px;
     line-height: 20px;
     width: 260px;
-    & td{
-      margin-left: -1px;
+
+    & tr {
+      display: block;
       border-bottom: 1px solid @border-color;
-      padding: 20px 0;
+    }
+
+    & td:first-child {
+      width: 91px;
+    }
+
+    & td {
+      padding: 8px 0;
     }
   }
 }
@@ -48,140 +62,145 @@
 }
 
 .featured__buy {
-  margin-top: 20px;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  padding: 14px 0;
-  border: 2px solid @p-color;
-  color: @p-color;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: bold;
+  .btn();
+  margin-top: 28px;
+  width: 256px;
 }
 
-.featured__buy:hover{
-  background-color:@p-color;
-  color:#ffffff;
+.featured__buy:hover {
+  background-color: @p-color;
+  color: #ffffff;
 }
 
-.featured__buy:active{
-  background-color:@p-color;
-  color:#858585;
+.featured__buy:active {
+  color: @color-text-hover;
 }
 
 //планшет
-
-
-
 @media @tablet-widths {
-  .reviews{
-    background: url("../img/review@1x.jpg") no-repeat ;
-  }
-  .featured{
+  .featured {
     width: 668px;
     margin: 0 auto;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    &__title{
-      text-transform: uppercase;
-      font-size:43px;
+
+    &__title {
+      font-size: 43px;
       line-height: 50px;
       font-weight: bold;
-      width: 90%;
+      width: 85%;
     }
-    &__product-week{
-      width: 10%;
+
+    &__product-week {
+      width: 11%;
       text-align: center;
       text-transform: uppercase;
-      margin-top: 33px;
+      margin-top: 5px;
     }
-    &__image img{
+
+    &__image img {
       position: absolute;
       right: 0;
-      top: 0;
+      top: 7px;
       width: 50%;
-      }
-    &__price{
+    }
+
+    &__price {
       font-size: 20px;
       width: 44%;
       margin-bottom: 35px;
-      margin-top: 55px;
+      margin-top: 52px;
     }
-    &__buy{
+
+    &__buy {
       font-size: 17px;
-      width: 44%;
+      width: 43%;
     }
   }
 
-  .feature-product{
+  .feature-product {
+    margin: 0;
     width: 100%;
     position: relative;
-    margin-top: 50px;
+    margin-top: 22px;
+    padding-bottom: 70px;
 
     &__description {
       width: 44%;
       margin: 0;
-      margin-bottom: 55px;
-      }
-    &__list{
+      padding: 0;
+      margin-bottom: 32px;
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__list {
+      padding: 0;
+      margin: 0;
       width: 44%;
-      margin-top: 15px;
-      & td{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid @border-color;
+
+      & td {
+        padding-top: 9px;
+        padding-bottom: 7px;
       }
     }
   }
 }
-
 //desktop
-
 @media @desktop-widths {
-  .featured{
+  .featured {
     width: 1050px;
     position: relative;
-    padding-top: 71px;
-    &__product-week{
+    padding-top: 79px;
+    padding-bottom: 48px;
+
+    &__product-week {
       order: -1;
-      padding-left: 35px;
-      padding-right: 35px;
+      padding-left: 24px;
+      padding-right: 31px;
     }
-    &__title{
+
+    &__title {
       font-size: 53px;
       line-height: 57px;
       text-transform: none;
       width: 80%;
+      padding-bottom: 26px;
     }
-    &__image img{
+
+    &__image img {
       z-index: -1;
       top: -140px;
       right: 0;
-      top: 71px;
-    }
-    &__price{
-      padding-top: 93px;
-      margin-left:175px;
-      width: 280px;
-    }
-    &__buy{
-      margin-left:175px;
-      width: 280px;
-    }
-  }
-  .feature-product{
-    position: static;
-    padding-bottom: 60px;
-    &__description{
-      margin-left:175px;
-      width: 280px;
-    }
-    &__list{
-      margin-left:175px;
-      width: 280px;
+      top: 26px;
     }
 
+    &__price {
+      padding-top: 53px;
+      margin-left: 175px;
+      width: 301px;
+    }
+
+    &__buy {
+      margin-left: 175px;
+      width: 288px;
+    }
+  }
+
+  .feature-product {
+    position: static;
+    padding-bottom: 60px;
+
+    &__description {
+      margin-left: 175px;
+      width: 282px;
+      margin-bottom: 46px;
+    }
+
+    &__list {
+      margin-left: 175px;
+      width: 280px;
+    }
   }
 }

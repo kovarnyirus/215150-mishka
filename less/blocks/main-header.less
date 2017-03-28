@@ -1,5 +1,34 @@
-.main-header{
-  padding: 80px;
+.main-header {
   background-color: @bg-footer;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+
+  &__title {
+    text-align: center;
+    padding: 70px 0 76px;
+  }
+}
+@media @tablet-widths {
+  .main-header {
+    margin-bottom: 85px;
+
+    &__title {
+      padding-top: 94px;
+
+      & h1 {
+        font-size: 43px;
+        line-height: 50px;
+      }
+    }
+  }
+}
+//desktop
+@media @desktop-widths {
+  .main-header {
+    &__title {
+      & h1 {
+        font-size: 53px;
+        line-height: 57px;
+      }
+    }
+  }
 }

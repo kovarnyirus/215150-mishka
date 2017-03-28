@@ -27,7 +27,7 @@
           <li class="secondary-menu__item secondary-menu__item--search">
             <a href="#">
               <img class="icon-search" src="../img/icon-search.svg" alt="" />
-              Поиск по сайту
+              <span class="menu-text-none">Поиск по сайту</span>
             </a>
           </li>
           <li class="secondary-menu__item ">
@@ -44,10 +44,12 @@
     </div>
   </header>
   <div class="order-form">
-    <div class="order-form__title">
-      <h1>Вязание на заказ</h1>
+    <div class="order-form-header">
+      <div class="order-form-header__title">
+        <h1>Вязание на заказ</h1>
+      </div>
     </div>
-    <form action="https://echo.htmlacademy.ru/" method="post">
+    <form  action="https://echo.htmlacademy.ru/" method="post">
       <p class="order-form__description">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
@@ -68,33 +70,33 @@
       </div>
       <div class="filter-color">
         <div class="filter-color__wrapper">
-          <div class="filter-type__header">
+          <div class="filter-type__header filter-type__header--padding-top">
             <span class="filter-color__title ">Цвет</span>
           </div>
           <div class="filter-color__list">
             <div class="filter-color__item">
-              <input type="checkbox" id="color-white" name="color-white" value="white" checked>
-              <label for="color-white"><span class="filter-color_text">Белый</span></lable>
+              <input type="checkbox" id="color-white" class="filter-type-checkbox" name="color-white" value="white" checked>
+              <label for="color-white">Белый</lable>
             </div>
             <div class="filter-color__item">
-              <input type="checkbox" id="color-grey" name="color-grey" value="grey" checked>
-              <label for="color-grey"><span class="filter-color_text">Серый</span></lable>
+              <input type="checkbox" id="color-grey" class="filter-type-checkbox" name="color-grey" value="grey" checked>
+              <label for="color-grey">Серый</lable>
             </div>
             <div class="filter-color__item">
-              <input type="checkbox" id="color-tiffani" name="color-tiffani" value="tiffani">
-              <label for="color-tiffani"><span class="filter-color_text">"Тиффани"</span></lable>
+              <input type="checkbox" id="color-tiffani" class="filter-type-checkbox" name="color-tiffani" value="tiffani" checked>
+              <label for="color-tiffani">«Тиффани»</lable>
             </div>
             <div class="filter-color__item">
-              <input type="checkbox" id="color-black" name="black" value="black">
-              <label for="color-black"><span class="filter-color_text">Черный</span></lable>
+              <input type="checkbox" id="color-black" class="filter-type-checkbox" name="black" value="black">
+              <label for="color-black">Черный</lable>
             </div>
             <div class="filter-color__item">
-              <input type="checkbox" id="color-pink" name="pink" value="pink">
-              <label for="color-pink"><span class="filter-color_text">Розовый</span></lable>
+              <input type="checkbox" id="color-pink" class="filter-type-checkbox" name="pink" value="pink">
+              <label for="color-pink">Розовый</lable>
             </div>
             <div class="filter-color__item">
-              <input type="checkbox" id="color-orange" name="orange" value="orange">
-              <label for="color-orange"><span class="filter-color_text">Оранжевый</span></lable>
+              <input type="checkbox" id="color-orange" class="filter-type-checkbox" name="orange" value="orange">
+              <label for="color-orange">Оранжевый</lable>
             </div>
           </div>
         </div>
@@ -105,35 +107,35 @@
         </div>
         <div class="user-info__list">
           <div class="user-info-item">
-            <lable class="user-info__input-title" for="name">Имя</lable>
+            <lable class="user-info__input-title" for="name">Имя:</lable>
             <input class="user-info__input-value" type="text" name="user-name" id="name" placeholder="Введите ваше имя*" />
           </div>
           <div class="user-info-item">
-            <lable class="user-info__input-title" for="surname">Фамилия</lable>
+            <lable class="user-info__input-title" for="surname">Фамилия:</lable>
             <input class="user-info__input-value" type="text" name="user-surname" id="surname" placeholder="Укажите фамилию*" />
           </div>
           <div class="user-info-item">
-            <lable class="user-info__input-title" for="patronymic">Отчество</lable>
+            <lable class="user-info__input-title" for="patronymic">Отчество:</lable>
             <input class="user-info__input-value" type="text" name="user-patronymic" id="patronymic" placeholder="Отчество, если желаете" />
           </div>
         </div>
       </div>
-      <div class="user-info user-info--color">
-      <div class="user-info__wrapper">
-          <div class="user-info-item">
-            <div class="user-info__header">
-              <span class="user-info__title">тел</span>
+      <div class="user-contacts">
+        <div class="user-contacts__wrapper">
+          <div class="user-contacts-item">
+            <div class="user-contacts__header">
+              <span class="user-contacts__title">тел</span>
             </div>
             <div class="user-phone__icon-phone">
-              <input class="user-info__input-value" type="tel" name="user-phone" id="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ*" />
+              <input class="user-contacts__input-value" type="tel" name="user-phone" id="tel" placeholder="+7 ХХХ ХХ ХХ*" />
             </div>
           </div>
-          <div class="user-info-item">
-            <div class="user-info__header">
-              <span class="user-info__title">e-mail</span>
+          <div class="user-contacts-item ">
+            <div class="user-contacts__header">
+              <span class="user-contacts__title">e-mail</span>
             </div>
             <div class="user-email__icon-email">
-              <input class="user-info__input-value" type="email" name="user-email" id="email" placeholder="Ваш Email*" required="2222" />
+              <input class="user-contacts__input-value" type="email" name="user-email" id="email" placeholder="Ваш Email*" required="2222" />
             </div>
           </div>
         </div>

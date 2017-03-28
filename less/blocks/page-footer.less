@@ -1,17 +1,19 @@
 .page-footer {
   width: 100%;
   background-color: @bg-footer;
-  &-wrapper{
-  .container();
-  margin-top: 30px;
+
+  &-wrapper {
+    .container();
+    margin-top: 30px;
   }
-  &__logo{
+
+  &__logo {
     display: none;
   }
 }
 
 .page-footer__social {
-  padding-bottom: 28px;
+  padding-bottom: 24px;
   padding-top: 24px;
   margin-left: 30px;
   margin-right: 30px;
@@ -19,20 +21,20 @@
 }
 
 .social-links a {
-  margin-right: 20px;
+  margin-right: 33px;
 }
 
 .social-links__instagram {
-  margin-left: 78px;
+  margin-left: 58px;
   width: 25px;
-  height: 25px;
+  height: 21px;
   background: url("../img/icon-insta.svg") no-repeat;
   display: inline-block;
 }
 
 .social-links__fb {
   width: 15px;
-  height: 25px;
+  height: 28px;
   background-image: url("../img/icon-fb.svg");
   display: inline-block;
 }
@@ -45,7 +47,9 @@
 }
 
 .page-footer__copyright {
-  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 67px;
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
@@ -53,49 +57,49 @@
   & a {
     width: 28px;
     height: 34px;
-    background-image: url("../img/logo-htmlacademy.svg");
+    background: url("../img/logo-htmlacademy.svg") no-repeat;
     display: inline-block;
-    margin-left: 20px;
-    margin-bottom: -10px;
+    margin-left: 19px;
+    margin-bottom: -9px;
   }
 }
-
 //планшет
-
 @media @tablet-widths {
-  .page-footer{
+  .page-footer {
     width: 100%;
+
     &-wrapper {
-    width: 668px;
-    padding:50px 50px;
-    display: flex;
-    justify-content: space-between;
+      width: 668px;
+      padding: 55px 50px;
+      display: flex;
+      justify-content: space-between;
     }
-    &__social{
+
+    &__social {
       padding: 0;
       margin: 0;
+      padding-left: 67px;
       border: none;
     }
-    &__copyright{
+
+    &__copyright {
       padding: 0;
       margin: 0;
     }
-    &__logo{
+
+    &__logo {
       display: block;
     }
   }
 }
-
-
 //пк
-
 @media @desktop-widths {
-  .page-footer{
+  .page-footer {
     width: 100%;
-    &-wrapper{
+
+    &-wrapper {
       width: 1050px;
       margin: 0 auto;
     }
   }
-
 }
