@@ -26,17 +26,16 @@
   }
 
   &__write-us {
-    width: 256px;
-    margin: 0 auto;
-    text-transform: uppercase;
-    display: block;
-    text-align: center;
-    padding: 14px 0;
-    border: 2px solid @p-color;
-    color: @p-color;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: bold;
+    .btn();
+  }
+
+  &__write-us:hover {
+    background-color: @p-color;
+    color: #ffffff;
+  }
+
+  &__write-us:active {
+    color: @color-text-hover;
   }
 
   &__field {
@@ -47,6 +46,22 @@
 .map {
   padding-bottom: 37px;
 }
+.contacts__value--condition {
+  border-bottom: 1px solid @border-hover;
+}
+
+.contacts__value--condition:hover{
+  color: #86d3c6;
+  border-color: #46c1ae;
+}
+
+.contacts__value--condition:active{
+  color: #d3ede8;
+  border-color: #ecf9f7;
+}
+
+//tablet
+
 @media @tablet-widths {
   .contacts {
     padding-bottom: 18px;
@@ -161,11 +176,6 @@
   .contacts__title::before {
     left: -112px;
     top: 62px;
-  }
-
-  .contacts__value--border {
-    border-bottom: 1px solid @border-color;
-    width: 208px;
   }
 
   .contacts__write-us {

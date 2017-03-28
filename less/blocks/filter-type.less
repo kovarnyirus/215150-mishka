@@ -55,6 +55,13 @@
   border-radius: 50%;
 }
 
+.filter-type__item input[type="radio"] + label:hover::before {
+  border-color:@border-hover;
+}
+.filter-type__item input[type="radio"] + label:active::before {
+  border-color:@border-active;
+}
+
 .filter-type__item input[type="radio"]:checked + label::after {
   position: absolute;
   content: "";
@@ -63,8 +70,10 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #62d1ba;
+  background-color: @border-hover;
 }
+
+
 //tablet
 @media @tablet-widths {
   .filter-type {

@@ -43,6 +43,12 @@
   height: 35px;
   border: 2px solid @p-color;
 }
+.filter-color__item input[type="checkbox"] + label:hover::before {
+  border-color: @border-hover;
+}
+.filter-color__item input[type="checkbox"] + label:active::before {
+  border-color: @border-active;
+}
 
 .filter-color__item input[type="checkbox"]:checked + label::after {
   position: absolute;
