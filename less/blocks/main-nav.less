@@ -2,14 +2,15 @@
   width: 100%;
   &-toggle {
     position: absolute;
-    right: 45px;
-    top: 10px;
+    right: 42px;
+    top: 27px;
     cursor: pointer;
     background: inherit;
     border: none;
     outline: none;
     width: 22px;
     height: 22px;
+    cursor: pointer;
   }
   &__list {
     list-style: none;
@@ -244,28 +245,22 @@
 .main-nav--closed .main-nav-toggle::before {
   content: "";
   position: absolute;
-  top: 22px;
-  left: 15px;
 
-  width: 22px;
-  height: 2px;
+  width: 20px;
+  height: 3px;
 
   background-color: #221f1f;
   box-shadow: 0 6px 0 0 #221f1f,
               0 12px 0 0 #221f1f;
 }
 .main-nav--opened .main-nav-toggle {
-  right: 48px;
-  top: 14px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 18px;
 
-    width: 22px;
+    width: 25px;
     height: 2px;
 
     background-color: #221f1f;
