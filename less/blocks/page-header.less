@@ -65,7 +65,6 @@
   box-shadow: 0 8px 0 0 #221f1f,
               0 16px 0 0 #221f1f;
 }
-
 .main-nav--opened .main-nav-toggle {
   right: 45px;
   top: 10px;
@@ -158,9 +157,14 @@
 }
 
 @media @mobile-widths-only {
-  .main-nav--closed .main-nav__item,
-  .secondary-menu__item{
+  .main-nav--closed .main-nav__item,{
     display: none;
+    .main-nav--closed .secondary-menu__item{
+      display: none;
+    }
+  }
+  .main-nav--opened .main-nav__item,{
+    display: block;
   }
 }
 
