@@ -94,8 +94,6 @@
 
 }
 
-
-
 .main-nav__item a:hover,
 .secondary-menu__item a:hover {
   color: @color-text-hover;
@@ -160,17 +158,15 @@
 }
 
 @media @mobile-widths-only {
-  .main-nav--closed .main-nav__item {
-    display: none;
-  }
-
-  .main-nav--closed .secondary-menu__item {
+  .main-nav--closed .main-nav__item,
+  .secondary-menu__item{
     display: none;
   }
 }
 
 
 //tablet
+
 @media @tablet-widths {
   .page-header {
     width: 100%;
