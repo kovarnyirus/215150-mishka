@@ -10,34 +10,32 @@
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <div class="logo">
-        <a href="index.html"><img src="img\logo-mobile.svg" alt="Логотип" /> </a>
-      </div>
-      <nav class="main-nav">
-        <button class="main-nav-toggle" type="botton">X</button>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav-toggle" type="botton"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Новые поступления</a></li>
-          <li class="main-nav__item"><a href="#">Распродажа</a></li>
-        </ul>
-      </nav>
-      <div class="page-header__user-menu">
-        <ul class="secondary-menu-list">
-          <li class="secondary-menu__item secondary-menu__item--search">
-            <a href="#">
+          <li class="main-nav__item main-nav__item--logo"><a class="main-nav__link" href="index.html"><picture>
+                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img src="img/logo-mobile.svg" alt="Mishka" height="35" width="86">
+                  </picture></a></li>
+          <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--form"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--new"><a class="main-nav__link" href="#">Новые поступления</a></li>
+          <li class="main-nav__item main-nav__item--sale"><a class="main-nav__link" href="#">Распродажа</a></li>
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link" href="#">
               <img class="icon-search" src="../img/icon-search.svg" alt="" />
               <span class="menu-text-none">Поиск по сайту</span>
             </a>
           </li>
-          <li class="secondary-menu__item ">
-            <a href="">
+          <li class="main-nav__item main-nav__item--cart">
+            <a class="main-nav__link" href="">
               <img class="icon-cart" src="../img/icon-cart.svg" alt="" />
               Корзина: <span>пока пуста</span>
             </a>
           </li>
         </ul>
-      </div>
+      </nav>
       <div class="page-header__text-delivery">
           Бесплатная доставка по России
       </div>

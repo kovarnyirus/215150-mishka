@@ -2,15 +2,16 @@
   width: 100%;
   &-toggle {
     position: absolute;
-    right: 42px;
-    top: 27px;
+    right: 22px;
+    top: 22px;
     cursor: pointer;
     background: inherit;
     border: none;
     outline: none;
-    width: 22px;
-    height: 22px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    z-index: 5;
   }
   &__list {
     list-style: none;
@@ -27,6 +28,9 @@
     &:nth-child(4),
     &:nth-child(5) {
       display: none;
+    }
+    &:first-child{
+      display: block;
     }
     &:last-child{
       border-bottom: 1px solid #ececec;
@@ -245,9 +249,11 @@
 .main-nav--closed .main-nav-toggle::before {
   content: "";
   position: absolute;
+  right: 9px;
+  top: 10px;
 
   width: 20px;
-  height: 3px;
+  height: 2px;
 
   background-color: #221f1f;
   box-shadow: 0 6px 0 0 #221f1f,
@@ -259,6 +265,8 @@
   &::after {
     content: "";
     position: absolute;
+    right: 7px;
+    top: 17px;
 
     width: 25px;
     height: 2px;
@@ -286,7 +294,23 @@
 }
 
 @media @mobile-widths-only {
-  .main-nav--closed .main-nav__item,{
+  .main-nav--closed .main-nav__item{
     display: none;
+  }
+  .main-nav--closed .main-nav__item:first-child{
+    display: block;
+  }
+  .main-nav--opened .main-nav__item:first-child{
+    position: static;
+    .page-header__wrapper{
+      height: 80px;
+    }
+
+  }
+  .main-nav--opened .main-nav__list{
+    position: absolute;
+    background-color: #fff;
+    z-index: 2;
+    width: 100%
   }
 }
