@@ -46,6 +46,12 @@
   height: 50px;
   display: inline-block;
   cursor: pointer;
+  &:hover{
+    opacity: 0.5;
+  }
+  &:active{
+    opacity: 0.2;
+  }
 }
 
 .reviews__next {
@@ -58,6 +64,12 @@
   display: inline-block;
   cursor: pointer;
   margin-left: -5px;
+  &:hover{
+    opacity: 0.5;
+  }
+  &:active{
+    opacity: 0.2;
+  }
 }
 
 .reviews__write-reviws {
@@ -80,6 +92,7 @@
 }
 
 //планшет
+
 @media @tablet-widths {
   .reviews {
     width: 100%;
@@ -92,6 +105,10 @@
       padding: 76px 0 0;
       position: relative;
       background: url("../img/review@1x.jpg") no-repeat;
+      @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: url("../img/review@2x.jpg") no-repeat;
+        background-size: 350px auto;
+      }
     }
 
     &__title {

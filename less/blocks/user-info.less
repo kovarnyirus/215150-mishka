@@ -59,29 +59,9 @@
   padding-bottom: 24px;
 }
 
-.user-email__icon-email,
-.user-phone__icon-phone {
-  position: relative;
-}
 
-.user-phone__icon-phone::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  background: url("../img/icon-phone.svg") no-repeat;
-  top: -3px;
-  right: 2px;
-}
 
-.user-email__icon-email::after {
-  content: "";
-  width: 40px;
-  height: 30px;
-  position: absolute;
-  background: url("../img/icon-mail.svg") no-repeat;
-  right: 30px;
-}
+
 //@tablet
 @media @tablet-widths {
   .user-info {
@@ -149,27 +129,7 @@
     padding-bottom: 16px;
   }
 
-  .user-phone__icon-phone {
-    width: 75%;
-    border-bottom: 2px solid #000;
 
-    & input {
-      padding-left: 25px;
-      background-color: @bg-footer;
-      border: none;
-    }
-  }
-
-  .user-email__icon-email {
-    width: 75%;
-    border-bottom: 2px solid #000;
-
-    & input {
-      padding-left: 25px;
-      background-color: @bg-footer;
-      border: none;
-    }
-  }
 }
 //desktop
 @media @desktop-widths {
@@ -194,14 +154,6 @@
 
     &__wrapper {
       width: 1050px;
-    }
-
-    .user-phone__icon-phone {
-      width: 700px;
-    }
-
-    .user-email__icon-email {
-      width: 700px;
     }
   }
 }

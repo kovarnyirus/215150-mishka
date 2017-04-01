@@ -1,0 +1,37 @@
+.map {
+  height: 457px;
+  padding-bottom: 37px;
+  background: url("../img/map-mobile@1x.jpg") no-repeat;
+  background-size:100% 457px;
+  @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/map-mobile@2x.jpg") no-repeat;
+    background-size:100% 457px;
+  }
+}
+
+@media @tablet-widths {
+  .map {
+    width: 100%;
+    margin: 34px 0 0 0;
+    background: url("../img/map-tablet@1x.jpg") no-repeat;
+    background-size:100% 457px;
+    @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/map-tablet@2x.jpg") no-repeat;
+      background-size:100% 457px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .map {
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+  }
+  background: url("../img/video-desktop@1x.jpg") 100% 0 no-repeat;
+  @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/video-desktop@2x.jpg") 100% 0 no-repeat;
+    background-size:100% 457px;
+  }
+}

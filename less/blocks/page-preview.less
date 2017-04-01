@@ -1,7 +1,14 @@
 .page-preview {
-  padding: 0 30px;
-  background: url("../img/hero-mobile@1x.jpg") 50% 0 no-repeat;
+  position: relative;
   background-color: #f9f9f9;
+  width: 100%;
+  &__wrapper{
+    padding: 0 30px;
+    background: url("../img/hero-mobile@1x.jpg") 50% 0 no-repeat;
+    @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/hero-mobile@2x.jpg") 50% 0 no-repeat;
+    }
+  }
 }
 
 .page-preview__title {
@@ -34,6 +41,8 @@
 }
 
 .page-preview__item:hover {
+  padding-top:31px;
+  margin-top: -5px;
   background-color: #59d5bc;
 }
 
@@ -51,6 +60,10 @@
   height: 65px;
   background: url("../img/icon-interior.svg") no-repeat;
   position: absolute;
+
+}
+.page-preview__item--ico:active::before{
+  opacity: 0.8;
 }
 
 .page-preview__item--color {
@@ -74,15 +87,35 @@
   background: url("../img/icon-toy.svg") no-repeat;
   position: absolute;
 }
+
+.page-preview__item--color:active::before {
+  opacity: 0.8;
+}
+
+
 @media @tablet-widths {
   .page-preview {
-    width: 668px;
-    margin: 0 auto;
-    padding: 0;
-    margin-bottom: 46px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
+    &::after{
+      content: "";
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 10px;
+      position: absolute;
+      background: url("../img/bg-zigzag-fill.svg") no-repeat;
+      background-size: 100% auto;
+    }
+    &__wrapper{
+      width: 668px;
+      margin: 0 auto;
+      padding: 0;
+      margin-bottom: 46px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-size: auto 100%;
+    }
 
     &__production {
       position: relative;
@@ -91,16 +124,6 @@
       display: flex;
       flex-direction: row;
       background: url("../img/icon-toy.svg") no-repeat;
-      &::after{
-        content: "";
-        right: 0px;
-        bottom: 0px;
-        width: 100%;
-        height: 10px;
-        position: absolute;
-        background: url("../img/bg-zigzag-fill.svg") no-repeat;
-        background-size: 100% auto;
-      }
     }
 
     &__title {
@@ -137,12 +160,21 @@
     right: 28px;
   }
 }
+
+
 @media @desktop-widths {
   .page-preview {
-    width: 1050px;
-    &__production::after{
+    &__wrapper{
+      width: 1050px;
+      background: url("../img/hero-desktop@1x.jpg") 50% 0 no-repeat;
+      @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: url("../img/hero-desktop@2x.jpg") 50% 0 no-repeat;
+      }
+    }
+
+    &::after{
       width: 100%;
-      height: 15px;
+      height: 19px;
       background-size: 100% auto;
     }
 
