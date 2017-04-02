@@ -34,11 +34,6 @@
   margin-bottom: 30px;
 }
 
-.user-contacts-item:hover{
-  border-color: @border-hover;
-}
-
-
 .user-contacts__input-title {
   font-size: 17px;
   line-height: 18px;
@@ -55,31 +50,52 @@
   color: @form-text-color;
 }
 
-.user-email__icon-email,
-.user-phone__icon-phone {
+.user-email,
+.user-phone {
+  width: 97%;
   position: relative;
 }
 
-.user-phone__icon-phone::before {
-  content: "";
+.user-phone__icon-phone{
   width: 30px;
   height: 30px;
   position: absolute;
-  background: url("../img/icon-phone.svg") no-repeat;
   top: -3px;
   right: 2px;
+  & path{
+    fill: #cccccc;
+  }
+  &:hover{
+    & path{
+      fill: #62d1ba;
+    }
+  }
 }
 
-.user-email__icon-email::after {
-  content: "";
+.user-email__icon-email{
   width: 40px;
   height: 30px;
   position: absolute;
-  background: url("../img/icon-mail.svg") no-repeat;
   top: -2px;
   right: -5px;
+  & path{
+    fill: #cccccc;
+  }
+  &:hover{
+    & path{
+      fill: #62d1ba;
+    }
+  }
 }
+
+.user-email:hover,
+.user-phone:hover{
+  border-bottom: 2px solid @border-hover;
+}
+
 //@tablet
+
+
 @media @tablet-widths {
   .user-contacts {
     background-color: @bg-footer;
@@ -115,17 +131,40 @@
     margin-bottom: 14px;
   }
 
-  .user-phone__icon-phone::before {
+  .user-phone{
+    width: 75%;
+    border-bottom: 2px solid #000;
+
+    & input {
+      padding-left: 25px;
+      background-color: @bg-footer;
+      border: none;
+    }
+  }
+
+  .user-email{
+    width: 75%;
+    border-bottom: 2px solid #000;
+
+    & input {
+      padding-left: 25px;
+      background-color: @bg-footer;
+      border: none;
+    }
+  }
+
+  .user-phone__icon-phone {
     top: -5px;
     right: 21px;
   }
 
-  .user-email__icon-email::after {
+  .user-email__icon-email {
     top: -5px;
     right: 14px;
   }
 }
 //desktop
+
 @media @desktop-widths {
   .user-contacts {
     width: 100%;
@@ -141,20 +180,20 @@
     }
   }
 
-  .user-email__icon-email {
+  .user-email {
+    width: 66%;
+  }
+
+  .user-phone{
     width: 66%;
   }
 
   .user-phone__icon-phone {
-    width: 66%;
+    right: 00px;
   }
 
-  .user-phone__icon-phone::before {
-    right: -2px;
-  }
-
-  .user-email__icon-email::after {
-    right: -9px;
+  .user-email__icon-email {
+    right: 0px;
   }
 
   .additionally__textarea {}

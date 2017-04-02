@@ -28,25 +28,63 @@
   margin-left: 58px;
   width: 25px;
   height: 21px;
-  background: url("../img/icon-insta.svg") no-repeat;
   display: inline-block;
+}
+.page-footer__logo:hover{
+  fill: @color-icon-hover;
+}
+
+.page-footer__logo:active{
+  fill: @color-icon-active;
+}
+
+.social__icon-insta:hover{
+  & path{
+    fill: @color-icon-hover;
+  }
+}
+
+.social__icon-insta:active{
+  & path{
+    fill: @color-icon-active;
+  }
 }
 
 .social-links__fb {
   width: 15px;
   height: 28px;
-  background-image: url("../img/icon-fb.svg");
   display: inline-block;
+}
+.social-links__fb:hover{
+  & path{
+    fill: @color-icon-hover;
+  }
+}
+.social-links__fb:active{
+  & path{
+    fill: @color-icon-active;
+  }
 }
 
 .social-links__twitter {
   width: 23px;
   height: 20px;
-  background-image: url("../img/icon-twitter.svg");
   display: inline-block;
+}
+.social__icon-twitter:hover {
+  & path{
+    fill: @color-icon-hover;
+  }
+}
+
+.social__icon-twitter:active {
+  & path{
+    fill: @color-icon-active;
+  }
 }
 
 .page-footer__copyright {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 30px;
   padding-left: 67px;
@@ -57,10 +95,24 @@
   & a {
     width: 28px;
     height: 34px;
-    background: url("../img/logo-htmlacademy.svg") no-repeat;
     display: inline-block;
     margin-left: 19px;
     margin-bottom: -9px;
+  }
+}
+.page-footer__logo-htmlacademy{
+  position: absolute;
+  button: 0;
+  right: 0;
+  &:hover{
+    & path{
+      fill: @color-icon-hover;
+    }
+  }
+  &:active{
+    & path{
+      fill: @color-icon-active;
+    }
   }
 }
 //планшет

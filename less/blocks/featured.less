@@ -1,10 +1,14 @@
 .featured {
-  margin: 0 auto;
-  width: 260px;
+  position: relative;
+  width: 100%;
+  &__wrapper{
+    margin: 0 auto;
+    width: 260px;
+  }
 }
 
 .featured__title {
-  padding-bottom: 28px;
+  padding-top: 28px;
   line-height: 30px;
 }
 
@@ -20,7 +24,7 @@
 
 .feature-product {
   color: @p-color;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 
   &__description {
     margin: 0;
@@ -79,13 +83,19 @@
 //планшет
 @media @tablet-widths {
   .featured {
-    width: 668px;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    &__wrapper{
+      width: 668px;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+
+    }
 
     &__title {
+      padding-top: 0;
+      padding-bottom: 28px;
       font-size: 43px;
       line-height: 50px;
       font-weight: bold;
@@ -150,10 +160,13 @@
 //desktop
 @media @desktop-widths {
   .featured {
-    width: 1050px;
-    position: relative;
-    padding-top: 79px;
-    padding-bottom: 48px;
+    width: 100%;
+    &__wrapper{
+      width: 1050px;
+      position: relative;
+      padding-top: 79px;
+      padding-bottom: 39px;
+    }
 
     &__product-week {
       order: -1;

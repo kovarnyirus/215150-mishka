@@ -31,6 +31,9 @@
   width: 100%;
   min-height: 150px;
   background: url("../img/video-mobile@1x.jpg") 100% 0 no-repeat;
+  @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/video-mobile@2x.jpg") 100% 0 no-repeat;
+  }
 }
 
 .video__make-order {
@@ -71,6 +74,10 @@
     height: 451px;
     border-bottom: 1px solid @border-color;
     background-size: cover;
+    background: url("../img/video-tablet@1x.jpg") 100% 0 no-repeat;
+    @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/video-tablet@2x.jpg") 100% 0 no-repeat;
+    }
   }
 
   .video-header {
@@ -112,6 +119,11 @@
     &-player {
       width: 65%;
       float: left;
+      border-bottom: none;
+      background: url("../img/video-desktop@1x.jpg") 100% 0 no-repeat;
+      @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: url("../img/video-desktop@2x.jpg") 100% 0 no-repeat;
+      }
     }
 
     &-header {

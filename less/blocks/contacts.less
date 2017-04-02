@@ -5,7 +5,7 @@
 }
 
 .contacts {
-  padding-top: 43px;
+  padding-top: 35px;
   margin-bottom: 39px;
 
   &__title {
@@ -27,6 +27,8 @@
 
   &__write-us {
     .btn();
+    width: 260px;
+    margin: 0 auto;
   }
 
   &__write-us:hover {
@@ -43,9 +45,6 @@
   }
 }
 
-.map {
-  padding-bottom: 37px;
-}
 .contacts__value--condition {
   border-bottom: 1px solid @border-hover;
 }
@@ -65,7 +64,7 @@
 @media @tablet-widths {
   .contacts {
     padding-bottom: 18px;
-    padding-top: 93px;
+    padding-top: 85px;
     width: 100%;
 
     &__wrapper {
@@ -122,18 +121,14 @@
     background: url("../img/icon-flag.svg") no-repeat;
     position: absolute;
   }
-
-  .map {
-    width: 100%;
-    padding: 34px 0 0;
-  }
 }
 //desktop
 @media @desktop-widths {
   .contacts {
     width: 875px;
-    margin: 69px auto 83px;
+    margin: 26px auto 83px;
     padding-left: 175px;
+    padding-top: 10px;
 
     &__wrapper {
       float: left;
@@ -159,12 +154,6 @@
         width: 100%;
       }
     }
-  }
-
-  .map {
-    float: right;
-    padding: 0;
-    width: 60%;
   }
 
   .contacts__title {

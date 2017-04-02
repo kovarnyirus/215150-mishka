@@ -39,6 +39,9 @@
 }
 //tablet
 @media @tablet-widths {
+  .order-form-header{
+    position: relative;
+  }
   .order-form-header__title {
     padding-top: 92px;
     padding-bottom: 83px;
@@ -47,6 +50,16 @@
     & h1 {
       font-size: 43px;
       line-height: 50px;
+    }
+    &::after{
+      content: "";
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 12px;
+      position: absolute;
+      background: url("../img/bg-zigzag-fill.svg") no-repeat;
+      background-size: 100% auto;
     }
   }
 
@@ -80,6 +93,7 @@
   }
 }
 //desktop
+
 @media @desktop-widths {
   .order-form {
     margin-bottom: 32px;
@@ -88,15 +102,20 @@
       padding-bottom: 20px;
       margin-bottom: 73px;
 
-      &__title h1 {
+      &__title{
+        &::after{
+          height: 23px;
+        }
+        & h1 {
         font-size: 53px;
         line-height: 57px;
+        }
       }
     }
 
     &__must-field {
       color: @p-color;
-      width: 42%;
+      width: 46%;
       bottom: -4px;
     }
 

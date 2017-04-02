@@ -1,0 +1,122 @@
+.popap{
+  margin-top: 50px;
+  &-wrapper{
+    width: 100%;
+    border-top: 2px solid @border-active;
+    padding-bottom: 30px;
+    box-shadow: -6px 0 white, 6px 0 white, 0 6px 5px -2px grey;
+  }
+  &__header{
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__size{
+    color:@color-text-hover
+  }
+  &__title{
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 55px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  &__list{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    margin-bottom: 20px;
+  }
+  &__item{
+    width:76px;
+    border: 2px solid @mint-color;
+  }
+}
+.popap-item__text {
+  display: block;
+  text-align: center;
+  padding: 13px 0;
+  font-size: 17pd;
+  line-height: 16px;
+  font-weight: bold;
+}
+.popap-item-radio{
+  display: none;
+}
+.popap-add-size{
+  .btn();
+  border: none;
+  background-color:@mint-color;
+  color: #fff;
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+}
+.popap__item input[type="radio"]:checked + label {
+  .popap__item{
+    background-color: #000;
+  }
+}
+.popap__item input[type="radio"] + label:hover {
+  border-color:@border-hover;
+}
+.popap__item input[type="radio"] + label:active{
+  border-color:@border-active;
+}
+
+//планшет
+@media @tablet-widths {
+  .popap{
+    &-wrapper{
+      width: 570px;
+      border: 1px solid @border-active;
+      box-shadow:0 6px 5px -2px grey;
+      margin: 0 auto;
+      padding-top: 12px;
+      padding-bottom: 46px;
+    }
+    &__header{
+      width: 100%;
+      margin-bottom: 22px;
+    }
+    &__title{
+      font-size:30px;
+      line-height: 57px;
+      margin-bottom: 14px;
+    }
+    &__size{
+      font-size: 17px;
+      line-height: 30px;
+    }
+    &__list{
+      padding-left:108px;
+      padding-right: 108px;
+      width: 62%;
+      margin-bottom: 34px;
+    }
+    &__item{
+      width: 109px;
+    }
+    &-item__text{
+      padding: 15px 0;
+    }
+    &-add-size{
+      padding: 15px 0;
+      width: 62%;
+    }
+  }
+}
+
+//desktop
+
+@media @desktop-widths {
+  .popap{
+    &-wrapper{
+      width: 567px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.zigzag-line::after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background: url("../img/bg-zigzag-line.svg") repeat;
+  background-size: auto 7px;
+  z-index: 4;
+}
+
+
+@media @desktop-widths {
+  .zigzag-line::after{
+    height:25px;
+    background-size: auto 25px;
+  }
+}
