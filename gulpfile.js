@@ -68,7 +68,12 @@ gulp.task("serve", ["style"], function() {
 
 gulp.task("build", function (fn) {
   run(
-    "clean", "copy", "style", "images", "symbols", fn);
+    "clean",
+    "copy",
+    "style",
+    "images",
+    "symbols",
+    fn);
 });
 
 gulp.task("copy", function () {

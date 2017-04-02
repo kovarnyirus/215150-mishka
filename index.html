@@ -206,6 +206,30 @@
       </div>
     </div>
   </footer>
+  <div class="popap">
+    <div class="popap-wrapper">
+      <div class="popap__header">
+        <h1 class="popap__title">Добавить в корзину</h1>
+        <span class="popap__size">Выберите размер:</span>
+      </div>
+      <form  action="https://echo.htmlacademy.ru/" method="post">
+        <div class="popap__list">
+          <div class="popap__item">
+            <input type="radio" class="popap-item-radio" id="size-s" checked name="radio-size" value="size-s">
+            <label for="size-s" class="popap-item__text">S</lable>
+          </div>
+          <div class="popap__item">
+            <input type="radio" class="popap-item-radio" id="size-m" name="radio-size" value="size-m">
+            <label for="size-m" class="popap-item__text">M</lable>
+          </div>
+          <div class="popap__item">
+            <input type="radio" class="popap-item-radio" id="size-l" name="radio-size" value="size-l">
+            <label for="size-l" class="popap-item__text">L</lable>
+          </div>
+        </div>
+        <button class="popap-add-size" type="submit">добавить</button>
+      </form>
+    </div>
   <script src="js/toggle.js"></script>
 </body>
 
