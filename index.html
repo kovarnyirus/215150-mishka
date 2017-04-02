@@ -94,7 +94,7 @@
             </picture>
           </div>
           <span class="featured__price">Цена: 990 руб.</span>
-          <a class="featured__buy">Заказать</a>
+          <button class="featured__buy" id="buy" type="botton">Заказать</button>
         </div>
       </div>
       <div class="zigzag-line"></div>
@@ -206,7 +206,7 @@
       </div>
     </div>
   </footer>
-  <div class="popap">
+  <div class="popap popap--closed">
     <div class="popap-wrapper">
       <div class="popap__header">
         <h1 class="popap__title">Добавить в корзину</h1>
@@ -230,7 +230,9 @@
         <button class="popap-add-size" type="submit">добавить</button>
       </form>
     </div>
-  <script src="js/toggle.js"></script>
+  </div>
+  <div class="popap-overlay popap--closed"></div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
