@@ -347,8 +347,13 @@
   .main-nav--nojs .main-nav-toggle{
     display: none;
   }
-  .main-nav--nojs .main-nav__wrapper {
+  .main-nav--nojs .main-nav__item {
   position: static;
+  display: block;
+  &:nth-child(4),
+  &:nth-child(5) {
+    display: none;
+  }
   }
 
 }
