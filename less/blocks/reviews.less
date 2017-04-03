@@ -45,6 +45,7 @@
   width: 130px;
   height: 50px;
   display: inline-block;
+  vertical-align: top;
   cursor: pointer;
   &:hover{
     opacity: 0.5;
@@ -62,6 +63,7 @@
   width: 130px;
   height: 50px;
   display: inline-block;
+  vertical-align: top;
   cursor: pointer;
   margin-left: -5px;
   &:hover{
@@ -101,8 +103,8 @@
 
     &-wrapper {
       margin: 0 auto;
-      width: 668px;
-      padding: 76px 0 0;
+      width: 718px;
+      padding: 76px 0 0 50px;
       position: relative;
       background: url("../img/review@1x.jpg") no-repeat;
       @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -121,7 +123,7 @@
       position: absolute;
       width: 171px;
       top: 79px;
-      right: 0;
+      right: 49px;;
     }
 
     &__item {
@@ -182,10 +184,14 @@
         margin-bottom: 27px;
       }
     }
+    &__write-reviws{
+      top: 79px;
+      right: 0px;
+    }
   }
 
   .control {
-    bottom: 61px;
+    bottom: 104px;
     right: -2px;
   }
 

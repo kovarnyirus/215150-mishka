@@ -13,7 +13,7 @@
 }
 
 .page-footer__social {
-  padding-bottom: 24px;
+  padding-bottom: 26px;
   padding-top: 24px;
   margin-left: 30px;
   margin-right: 30px;
@@ -29,6 +29,7 @@
   width: 25px;
   height: 21px;
   display: inline-block;
+  vertical-align: top;
 }
 .page-footer__logo:hover{
   fill: @color-icon-hover;
@@ -39,48 +40,38 @@
 }
 
 .social__icon-insta:hover{
-  & path{
     fill: @color-icon-hover;
-  }
 }
 
 .social__icon-insta:active{
-  & path{
     fill: @color-icon-active;
-  }
 }
 
 .social-links__fb {
   width: 15px;
   height: 28px;
   display: inline-block;
+  vertical-align: top;
 }
-.social-links__fb:hover{
-  & path{
+.social__icon-fb:hover{
     fill: @color-icon-hover;
-  }
 }
-.social-links__fb:active{
-  & path{
-    fill: @color-icon-active;
-  }
+.social__icon-fb:active{
+  fill: @color-icon-active;
 }
 
 .social-links__twitter {
   width: 23px;
   height: 20px;
   display: inline-block;
+  vertical-align: top;
 }
 .social__icon-twitter:hover {
-  & path{
     fill: @color-icon-hover;
-  }
 }
 
 .social__icon-twitter:active {
-  & path{
     fill: @color-icon-active;
-  }
 }
 
 .page-footer__copyright {
@@ -96,23 +87,20 @@
     width: 28px;
     height: 34px;
     display: inline-block;
+    vertical-align: top;
     margin-left: 19px;
     margin-bottom: -9px;
   }
 }
 .page-footer__logo-htmlacademy{
   position: absolute;
-  button: 0;
-  right: 0;
+  bottom: 0;
+  fill: @color-icon-hover;
   &:hover{
-    & path{
-      fill: @color-icon-hover;
-    }
+    fill: @color-icon-hover;
   }
   &:active{
-    & path{
-      fill: @color-icon-active;
-    }
+    fill: @color-icon-active;
   }
 }
 //планшет
@@ -122,7 +110,10 @@
 
     &-wrapper {
       width: 668px;
-      padding: 55px 50px;
+      padding-top: 60px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 50px;
       display: flex;
       justify-content: space-between;
     }
@@ -130,7 +121,7 @@
     &__social {
       padding: 0;
       margin: 0;
-      padding-left: 67px;
+      padding-left: 55px;
       border: none;
     }
 
@@ -140,6 +131,7 @@
     }
 
     &__logo {
+      margin-top: -5px;
       display: block;
     }
   }

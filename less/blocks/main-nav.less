@@ -80,14 +80,10 @@
   width: 17px;
   height: 21px;
   &:hover{
-    & path{
       fill: @color-icon-hover;
-    }
   }
   &:active{
-    & path{
-      fill: @color-icon-active;
-    }
+    fill: @color-icon-active;
   }
 }
 
@@ -98,14 +94,10 @@
   width: 18px;
   height: 21px;
   &:hover{
-    & path{
-      fill: @color-icon-hover;
-    }
+    fill: @color-icon-hover;
   }
   &:active{
-    & path{
-      fill: @color-icon-active;
-    }
+    fill: @color-icon-active;
   }
 }
 //tablet
@@ -241,6 +233,7 @@
     }
     &--cart{;
       order: 5;
+
     }
     &--new{
       padding-top: 16px;
@@ -251,6 +244,9 @@
         font-size: 15px;
         line-height: 24px;
       }
+    }
+    &:last-child{
+      border-bottom: none;
     }
     &--sale{
       padding-top: 16px;
@@ -340,4 +336,16 @@
     z-index: 2;
     width: 100%
   }
+  .main-nav--nojs .main-nav-toggle{
+    display: none;
+  }
+  .main-nav--nojs .main-nav__item {
+  position: static;
+  display: block;
+  &:nth-child(4),
+  &:nth-child(5) {
+    display: none;
+  }
+  }
+
 }

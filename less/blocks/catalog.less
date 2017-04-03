@@ -36,7 +36,7 @@
 
 .catalog-item-footer {
   border-top: 1px solid @border-color;
-  padding-top: 19px;
+  padding-top: 20px;
 }
 
 .catalog-item-footer__cost {
@@ -45,21 +45,30 @@
   width: 90px;
   display: inline-block;
   word-wrap: break-word;
+  vertical-align: top;
 }
 
 .catalog-item-footer__basket {
   width: 109px;
   display: inline-block;
+  vertical-align: top;
   height: 21px;
-  background: url("../img/icon-cart.svg") no-repeat;
   background-position: right;
   text-align: right;
+}
+.catalog-item-footer__cart{
+  &:hover{
+    fill: @color-icon-hover;
+  }
+  &:active{
+    fill: @color-icon-active;
+  }
 }
 //планшет
 @media @tablet-widths {
   .catalog {
     margin: 0 auto;
-    width: 668px;
+    width: 666px;
     padding: 0;
 
     &__item {
@@ -97,9 +106,10 @@
   .item-content {
     position: relative;
     padding: 0;
-    width: 41%;
+    width: 43%;
     min-height: 333px;
     margin: 0 26px;
+    margin-left: 28px;
 
     &__title {
       padding-top: 23px;
