@@ -17,8 +17,7 @@ var del = require("del");
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
-    .pipe(plumber())
-    .pipe(less())
+    .pipe(plumber())    .pipe(less())
     .pipe(postcss([
       autoprefixer({browsers: [
         "last 2 versions"
@@ -27,9 +26,10 @@ gulp.task("style", function() {
         sort: true
       })
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
