@@ -1,7 +1,4 @@
 {
-  "name": "mishka",
-  "version": "0.1.0",
-  "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.1.x",
@@ -20,11 +17,6 @@
     "gulp-svgstore": "^6.1.0",
     "run-sequence": "^1.2.2"
   },
-  "scripts": {
-    "test": "editorconfig-cli",
-    "build": "gulp build",
-    "start": "gulp serve"
-  },
   "editorconfig-cli": [
     "*.html",
     "*.json",
@@ -35,5 +27,12 @@
   ],
   "engines": {
     "node": "6.10"
-  }
+  },
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp serve",
+    "test": "editorconfig-cli"
+  },
+  "version": "0.1.0"
 }

@@ -76,7 +76,7 @@
 
 .page-footer__copyright {
   position: relative;
-  padding-top: 20px;
+  padding-top: 29px;
   padding-bottom: 30px;
   padding-left: 67px;
   font-size: 19px;
@@ -84,6 +84,9 @@
   font-weight: bold;
 
   & a {
+    position: absolute;
+    right: 68px;
+    top: 28px;
     width: 28px;
     height: 34px;
     display: inline-block;
@@ -128,6 +131,10 @@
     &__copyright {
       padding: 0;
       margin: 0;
+
+      & a{
+        position: static;
+      }
     }
 
     &__logo {

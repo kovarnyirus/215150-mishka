@@ -72,7 +72,7 @@
   </svg>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--nojs main-nav--closed ">
         <button class="main-nav-toggle" type="button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--logo"><a class="main-nav__link" href="index.html">
@@ -88,7 +88,7 @@
           <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link" href="#">
               <svg class="main-nav__icon-search" width="17.6" height="17.6">
-                <use  xlink:href="#icon-search"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
               </svg>
               <span class="menu-text-none">Поиск по сайту</span>
             </a>
@@ -96,7 +96,7 @@
           <li class="main-nav__item main-nav__item--cart">
             <a class="main-nav__link" href="">
               <svg class="main-nav__icon-cart" width="20.294" height="18.849">
-                <use  xlink:href="#icon-cart"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
               </svg>
               Корзина: <span>пока пуста</span>
             </a>
@@ -201,25 +201,25 @@
       <div class="page-footer__logo">
         <a href="#">
           <svg class="page-footer__logo" width="101.615" height="34.056">
-            <use  xlink:href="#logo-footer"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
           </svg>
         </a>
       </div>
       <div class="page-footer__social">
         <span class="social-links">
-            <a class="social-links__instagram" href="">
+            <a class="social-links__instagram" href="#">
               <svg class="social__icon-insta" width="21.769" height="21.334">
-                <use  xlink:href="#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
-            <a class="social-links__fb" href="">
+            <a class="social-links__fb" href="#">
               <svg class="social__icon-fb" width="14.962" height="27.718">
-                <use  xlink:href="#icon-fb"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
               </svg>
             </a>
-            <a class="social-links__twitter" href="">
+            <a class="social-links__twitter" href="#">
               <svg class="social__icon-twitter" width="23.494" height="20.168">
-                <use  xlink:href="#icon-twitter"></use>
+                <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </span>
@@ -228,12 +228,13 @@
         Разработано:
         <a class=" btn page-footer__copyright-link" href=" https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__logo-htmlacademy" width="26.943" height="34.09">
-            <use  xlink:href="#logo-htmlacademy"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
   <script src="js/svgxuse.min.js"></script>
 </body>
 
